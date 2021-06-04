@@ -1,0 +1,8 @@
+.ebd_input {
+    display: block;
+}
+.ebd_link img{
+	height:40px !important;
+	width: 40px !important;
+	margin-right: 5px;
+}

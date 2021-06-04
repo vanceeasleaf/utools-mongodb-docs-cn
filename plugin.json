@@ -1,0 +1,17 @@
+{
+	"pluginName": "mongodb中文文档",
+	"description": "mongodb中文文档",
+	"author": "Yang Zhou",
+	"version": "1.0.0",
+	"homepage": "https://docs.mongoing.com/",
+
+	"preload": "preload.js",
+	"logo": "logo.png",
+	"features": [
+		{
+			"code": "mongodb-docs-cn",
+			"explain": "mongodb中文文档",
+			"cmds": ["mongodb-docs-cn"]
+		}
+	]
+}

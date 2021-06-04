@@ -1,0 +1,466 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link rel="dns-prefetch" href="https://apps.bdimg.com/">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="MongoDB中文社区">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+<script type="text/javascript">var ajaxurl = "https://mongoing.com/wp-admin/admin-ajax.php",ap_nonce 	= "8ff1daf963",apTemplateUrl = "https://mongoing.com/wp-content/plugins/anspress-question-answer/templates/js-template";apQuestionID = "";aplang = {"loading":"\u6b63\u5728\u8f7d\u5165..","sending":"\u53d1\u9001\u8bf7\u6c42","file_size_error":"\u6587\u4ef6\u5927\u5c0f\u5927\u4e8e 0 MB","attached_max":"\u60a8\u5df2\u7ecf\u9644\u52a0\u4e86\u5141\u8bb8\u7684\u9644\u4ef6\u7684\u6700\u5927\u6570\u91cf\u3002","commented":"\u5df2\u8bc4\u8bba","comment":"\u6761\u8bc4\u8bba","cancel":"\u53d6\u6d88","update":"\u66f4\u65b0","your_comment":"\u5199\u4e0b\u4f60\u7684\u8bc4\u8bba\u2026","notifications":"\u901a\u77e5","mark_all_seen":"\u6807\u8bb0\u6240\u6709\u4e3a\u53ef\u89c1","search":"\u641c\u7d22","no_permission_comments":"\u62b1\u6b49\uff0c\u60a8\u65e0\u6743\u9605\u8bfb\u8bc4\u8bba\u3002"};disable_q_suggestion = "";</script>
+		<!-- All in One SEO 4.0.17 -->
+		<title>MongoDB初学者教程——7天学习MongoDB | MongoDB中文社区</title>
+		<meta name="description" content="MongoDB是面向文档的NoSQL数据库，用于大量数据存储。通过此课程的学习，您将了解如何访问Mongodb […]">
+		<link rel="canonical" href="">
+		<meta property="og:site_name" content="MongoDB中文社区 | 中文社区">
+		<meta property="og:type" content="article">
+		<meta property="og:title" content="MongoDB初学者教程——7天学习MongoDB | MongoDB中文社区">
+		<meta property="og:description" content="MongoDB是面向文档的NoSQL数据库，用于大量数据存储。通过此课程的学习，您将了解如何访问Mongodb […]">
+		<meta property="og:url" content="https://mongoing.com/mongodb-beginner-tutorial">
+		<meta property="article:published_time" content="2020-04-11T02:21:47Z">
+		<meta property="article:modified_time" content="2020-09-03T14:23:21Z">
+		<meta property="twitter:card" content="summary">
+		<meta property="twitter:domain" content="mongoing.com">
+		<meta property="twitter:title" content="MongoDB初学者教程——7天学习MongoDB | MongoDB中文社区">
+		<meta property="twitter:description" content="MongoDB是面向文档的NoSQL数据库，用于大量数据存储。通过此课程的学习，您将了解如何访问Mongodb […]">
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebSite","@id":"https:\/\/mongoing.com\/#website","url":"https:\/\/mongoing.com\/","name":"MongoDB\u4e2d\u6587\u793e\u533a","description":"\u4e2d\u6587\u793e\u533a","publisher":{"@id":"https:\/\/mongoing.com\/#organization"}},{"@type":"Organization","@id":"https:\/\/mongoing.com\/#organization","name":"MongoDB\u4e2d\u6587\u793e\u533a","url":"https:\/\/mongoing.com\/"},{"@type":"BreadcrumbList","@id":"https:\/\/mongoing.com\/mongodb-beginner-tutorial#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/mongoing.com\/#listItem","position":"1","item":{"@id":"https:\/\/mongoing.com\/#item","name":"\u4e3b\u9801","description":"\u4e2d\u6587\u793e\u533a","url":"https:\/\/mongoing.com\/"},"nextItem":"https:\/\/mongoing.com\/mongodb-beginner-tutorial#listItem"},{"@type":"ListItem","@id":"https:\/\/mongoing.com\/mongodb-beginner-tutorial#listItem","position":"2","item":{"@id":"https:\/\/mongoing.com\/mongodb-beginner-tutorial#item","name":"MongoDB\u521d\u5b66\u8005\u6559\u7a0b\u2014\u20147\u5929\u5b66\u4e60MongoDB","description":"MongoDB\u662f\u9762\u5411\u6587\u6863\u7684NoSQL\u6570\u636e\u5e93\uff0c\u7528\u4e8e\u5927\u91cf\u6570\u636e\u5b58\u50a8\u3002\u901a\u8fc7\u6b64\u8bfe\u7a0b\u7684\u5b66\u4e60\uff0c\u60a8\u5c06\u4e86\u89e3\u5982\u4f55\u8bbf\u95eeMongodb [\u2026]","url":"https:\/\/mongoing.com\/mongodb-beginner-tutorial"},"previousItem":"https:\/\/mongoing.com\/#listItem"}]},{"@type":"Person","@id":"https:\/\/mongoing.com\/archives\/author\/xica#author","url":"https:\/\/mongoing.com\/archives\/author\/xica","name":"xica","image":{"@type":"ImageObject","@id":"https:\/\/mongoing.com\/mongodb-beginner-tutorial#authorImage","url":"https:\/\/secure.gravatar.com\/avatar\/e50b7041a6b702b4557bbeb5038b94b7?s=96&d=retro&r=g","width":"96","height":"96","caption":"xica"}},{"@type":"WebPage","@id":"https:\/\/mongoing.com\/mongodb-beginner-tutorial#webpage","url":"https:\/\/mongoing.com\/mongodb-beginner-tutorial","name":"MongoDB\u521d\u5b66\u8005\u6559\u7a0b\u2014\u20147\u5929\u5b66\u4e60MongoDB | MongoDB\u4e2d\u6587\u793e\u533a","description":"MongoDB\u662f\u9762\u5411\u6587\u6863\u7684NoSQL\u6570\u636e\u5e93\uff0c\u7528\u4e8e\u5927\u91cf\u6570\u636e\u5b58\u50a8\u3002\u901a\u8fc7\u6b64\u8bfe\u7a0b\u7684\u5b66\u4e60\uff0c\u60a8\u5c06\u4e86\u89e3\u5982\u4f55\u8bbf\u95eeMongodb [\u2026]","inLanguage":"zh-CN","isPartOf":{"@id":"https:\/\/mongoing.com\/#website"},"breadcrumb":{"@id":"https:\/\/mongoing.com\/mongodb-beginner-tutorial#breadcrumblist"},"author":"https:\/\/mongoing.com\/mongodb-beginner-tutorial#author","creator":"https:\/\/mongoing.com\/mongodb-beginner-tutorial#author","datePublished":"2020-04-11T02:21:47+08:00","dateModified":"2020-09-03T14:23:21+08:00"}]}
+		</script>
+		<!-- All in One SEO -->
+
+<link rel='dns-prefetch' href='https://s.w.org/'>
+<link rel='stylesheet' id='anspress-fonts-css' href='static/css/fonts.css' type='text/css' media='all'>
+<link rel='stylesheet' id='anspress-main-css' href='static/css/main.css' type='text/css' media='all'>
+<style id='anspress-main-inline-css' type='text/css'>
+
+		#anspress .ap-q-cells{
+				margin-left: 25px;
+		}
+		#anspress .ap-a-cells{
+				margin-left: 25px;
+		}
+</style>
+<link rel='stylesheet' id='ap-overrides-css' href='https://mongoing.com/wp-content/plugins/anspress-question-answer/templates/css/overrides.css?v=4.1.20&ver=4.1.20' type='text/css' media='all'>
+<link rel='stylesheet' id='wedocs-styles-css' href='static/css/frontend1.css' type='text/css' media='all'>
+<link rel='stylesheet' id='wp-block-library-css' href='static/css/style.min.css' type='text/css' media='all'>
+<link rel='stylesheet' id='contact-form-7-css' href='static/css/styles.css' type='text/css' media='all'>
+<link rel='stylesheet' id='email-before-download-css' href='static/css/email-before-download-public.css' type='text/css' media='all'>
+<link rel='stylesheet' id='wp-polls-css' href='static/css/polls-css.css' type='text/css' media='all'>
+<style id='wp-polls-inline-css' type='text/css'>
+.wp-polls .pollbar {
+	margin: 1px;
+	font-size: 8px;
+	line-height: 10px;
+	height: 10px;
+	background-image: url('static/image/pollbg.gif');
+	border: 1px solid #c8c8c8;
+}
+
+</style>
+<link rel='stylesheet' id='dlm-frontend-css' href='static/css/frontend.css' type='text/css' media='all'>
+<link rel='stylesheet' id='_bootstrap-css' href='static/css/bootstrap.min.css' type='text/css' media='all'>
+<link rel='stylesheet' id='_fontawesome-css' href='static/css/font-awesome.min.css' type='text/css' media='all'>
+<link rel='stylesheet' id='_main-css' href='static/css/main1.css' type='text/css' media='all'>
+<script type='text/javascript' src='static/js/jquery.min.js'></script>
+<link rel='https://api.w.org/' href='https://mongoing.com/wp-json/'>
+<link rel='next' title='什么是MongoDB？简介，架构，功能和示例' href='https://mongoing.com/archives/docs/mongodb%E5%88%9D%E5%AD%A6%E8%80%85%E6%95%99%E7%A8%8B/%E4%BB%80%E4%B9%88%E6%98%AFmongodb%EF%BC%9F%E7%AE%80%E4%BB%8B%EF%BC%8C%E6%9E%B6%E6%9E%84%EF%BC%8C%E5%8A%9F%E8%83%BD%E5%92%8C%E7%A4%BA%E4%BE%8B'>
+<link rel="alternate" type="application/json+oembed" href="https://mongoing.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmongoing.com%2Fmongodb-beginner-tutorial">
+<link rel="alternate" type="text/xml+oembed" href="https://mongoing.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmongoing.com%2Fmongodb-beginner-tutorial&format=xml">
+<meta name="description" content="MongoDB是面向文档的NoSQL数据库，用于大量数据存储。通过此课程的学习，您将了解如何访问Mongodb及其重要功能，例如索引，正则表达式，分片数据等。  &nbsp; 我应该知道些什么？ 此课程是为初学者设计的。当然，有一定SQL基础，会更有帮助。  &nbsp; MongoDB基础   	什么是MongoDB">
+<style>a:hover, .site-navbar li:hover > a, .site-navbar li.active a:hover, .site-navbar a:hover, .search-on .site-navbar li.navto-search a, .topbar a:hover, .site-nav li.current-menu-item > a, .site-nav li.current-menu-parent > a, .site-search-form a:hover, .branding-primary .btn:hover, .title .more a:hover, .excerpt h2 a:hover, .excerpt .meta a:hover, .excerpt-minic h2 a:hover, .excerpt-minic .meta a:hover, .article-content .wp-caption:hover .wp-caption-text, .article-content a, .article-nav a:hover, .relates a:hover, .widget_links li a:hover, .widget_categories li a:hover, .widget_ui_comments strong, .widget_ui_posts li a:hover .text, .widget_ui_posts .nopic .text:hover , .widget_meta ul a:hover, .tagcloud a:hover, .textwidget a, .textwidget a:hover, .sign h3, #navs .item li a, .url, .url:hover, .excerpt h2 a:hover span, .widget_ui_posts a:hover .text span, .widget-navcontent .item-01 li a:hover span, .excerpt-minic h2 a:hover span, .relates a:hover span,.fixnav > li.current-menu-item > a, .fixnav > li.current_page_item > a, .post-copyright-custom a{color: #13aa52;}.btn-primary, .label-primary, .branding-primary, .post-copyright:hover, .article-tags a, .pagination ul > .active > a, .pagination ul > .active > span, .pagenav .current, .widget_ui_tags .items a:hover, .sign .close-link, .pagemenu li.active a, .pageheader, .resetpasssteps li.active, #navs h2, #navs nav, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary, .tag-clouds a:hover{background-color: #13aa52;}.btn-primary, .search-input:focus, #bdcs .bdcs-search-form-input:focus, #submit, .plinks ul li a:hover,.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary{border-color: #13aa52;}.search-btn, .label-primary, #bdcs .bdcs-search-form-submit, #submit, .excerpt .cat{background-color: #13aa52;}.excerpt .cat i{border-left-color:#13aa52;}@media (max-width: 720px) {.site-navbar li.active a, .site-navbar li.active a:hover, .m-nav-show .m-icon-nav{color: #13aa52;}}@media (max-width: 480px) {.pagination ul > li.next-page a{background-color:#13aa52;}}.post-actions .action.action-like,.pagemenu li.current-menu-item > a{background-color: #13aa52;}.catleader h1{border-left-color: #13aa52;}.loop-product-filters ul .current-cat>a{color: #13aa52;}.logo a {
+  height: 56px;
+}
+.logo img {
+  max-height: 56px;
+  margin-top: -12px;
+  margin-bottom: 0;
+}
+.brand {
+  display: none;
+}
+.docs .entry-title {
+    font-size: 25px; font-weight:bold; padding-bottom:50px
+}
+.widget-title {
+    font-size: 18px;
+}
+.entry-content{ line-height:1.83}</style><link rel="icon" href="https://mongoing.com/wp-content/uploads/2020/04/43fc3acfe8b8fe3-32x32.png" sizes="32x32">
+<link rel="icon" href="https://mongoing.com/wp-content/uploads/2020/04/43fc3acfe8b8fe3-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://mongoing.com/wp-content/uploads/2020/04/43fc3acfe8b8fe3-180x180.png">
+<meta name="msapplication-TileImage" content="https://mongoing.com/wp-content/uploads/2020/04/43fc3acfe8b8fe3-270x270.png">
+<link rel="shortcut icon" href="https://mongoing.com/favicon.ico">
+<!--[if lt IE 9]><script src="https://mongoing.com/wp-content/themes/dux/js/libs/html5.min.js"></script><![endif]-->
+</head>
+<body class="docs-template-default single single-docs postid-33642 m-excerpt-cat comment-open site-layout-3 text-justify-on m-sidebar m-user-on">
+<header class="header">
+	<div class="container">
+		<div class="logo"><a href="index1.html" title="MongoDB,MongoDB中文"><img src="static/picture/c16c760629feeac-e1594810404690.png" alt="MongoDB,MongoDB中文">MongoDB中文社区</a></div>		<div class="brand">MongoDB爱好者<br>垂直技术交流平台</div>		<ul class="site-nav site-navbar">
+			<li id="menu-item-25" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-25"><a title="首页" href="index2.html">首页</a></li>
+<li id="menu-item-182" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-182"><a href="niurenblog.html">大咖博客</a>
+<ul class="sub-menu">
+	<li id="menu-item-180" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-180"><a href="tj.html">TJ的博客</a></li>
+	<li id="menu-item-2164" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2164"><a href="zyd.html">张友东的博客</a></li>
+	<li id="menu-item-2165" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2165"><a href="ychtiger.html">叶翔的博客</a></li>
+	<li id="menu-item-3550" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3550"><a href="zhangyaogxing.html">耀星的博客</a></li>
+	<li id="menu-item-313" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-313"><a href="eshujiushiwo.html">E叔的博客</a></li>
+	<li id="menu-item-33256" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-33256"><a href="wolfkdy.html">孔德雨的博客</a></li>
+	<li id="menu-item-33269" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-33269"><a href="frank.html">徐雷的博客</a></li>
+	<li id="menu-item-26820" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26820"><a href="guoyuanwei.html">郭远威的博客</a></li>
+	<li id="menu-item-33153" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-33153"><a href="zale.html">Zale的博客</a></li>
+	<li id="menu-item-77701" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-77701"><a href="yangyazhou.html">杨亚洲的博客</a></li>
+	<li id="menu-item-77702" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-77702"><a href="xiadejun.html">夏德军的博客</a></li>
+	<li id="menu-item-181" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-181"><a href="beibei.html">贝贝的博客</a></li>
+	<li id="menu-item-4824" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4824"><a href="xiaopang.html">上海小胖的博客</a></li>
+	<li id="menu-item-2166" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2166"><a href="translation-blogs.html">官网翻译文章</a></li>
+</ul>
+</li>
+<li id="menu-item-756" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-756"><a href="anspress.html#038;sort=newest">技术问答</a></li>
+<li id="menu-item-34658" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-34658"><a href="index.html">中文用户手册</a>
+<ul class="sub-menu">
+	<li id="menu-item-76291" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76291"><a href="index.html">中文用户手册</a></li>
+	<li id="menu-item-33506" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33506"><a href="index3.html">3.4用户手册</a></li>
+	<li id="menu-item-56320" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-56320"><a href="" aria-current="page">7天入门学习</a></li>
+</ul>
+</li>
+<li id="menu-item-933" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-933"><a href="resources.html">资源分享</a>
+<ul class="sub-menu">
+	<li id="menu-item-33159" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33159"><a href="javascript:;">MongoDB大学</a></li>
+	<li id="menu-item-29255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29255"><a href="mongodb_ace.html">MongoDB高手课</a></li>
+	<li id="menu-item-34405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34405"><a href="mongodb-download-white-paper.html">MongoDB白皮书</a></li>
+	<li id="menu-item-34409" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34409"><a href="downloads-jingxiang.html">软件下载镜像</a></li>
+	<li id="menu-item-74971" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-74971"><a href="javascript:;">案例分享视频</a></li>
+	<li id="menu-item-78044" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78044"><a href="mongodb-webinar-video.html">在线研讨会视频</a></li>
+</ul>
+</li>
+<li id="menu-item-33249" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-33249"><a href="offline-user-conference.html">用户组</a>
+<ul class="sub-menu">
+	<li id="menu-item-33250" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33250"><a href="offline-user-groups.html">线下用户组</a></li>
+	<li id="menu-item-33154" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-33154"><a href="offline-user-conference.html">线下用户大会</a></li>
+	<li id="menu-item-33247" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33247"><a href="core-team-members.html">组委会成员</a></li>
+	<li id="menu-item-33297" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33297"><a href="translators.html">翻译小组</a></li>
+	<li id="menu-item-34495" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34495"><a href="mongodb-technical-support.html">社区成员</a></li>
+	<li id="menu-item-75412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75412"><a href="mongodb-training-assessment-certificate.html">入门培训合格证书</a></li>
+</ul>
+</li>
+<li id="menu-item-2306" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2306"><a href="webinar_cn.html">社区动态</a>
+<ul class="sub-menu">
+	<li id="menu-item-78370" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-78370"><a href="offline-user-conference.html">线下用户大会</a></li>
+	<li id="menu-item-33155" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-33155"><a href="webinar_cn.html">中文在线讲座</a></li>
+	<li id="menu-item-78369" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78369"><a href="mongodb-community-dynamics.html">社区动态</a></li>
+	<li id="menu-item-33158" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-33158"><a href="news.html">新闻</a></li>
+	<li id="menu-item-33157" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-33157"><a href="javascript:;">招聘</a></li>
+</ul>
+</li>
+<li id="menu-item-77717" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-77717"><a href="javascript:;">企业专栏</a>
+<ul class="sub-menu">
+	<li id="menu-item-33317" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33317"><a href="javascript:;">MongoDB公司</a></li>
+	<li id="menu-item-78053" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78053"><a href="javascript:;">Tapdata数据平台</a></li>
+	<li id="menu-item-33258" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33258"><a href="javascript:;">锦木信息技术</a></li>
+	<li id="menu-item-78122" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78122"><a href="javascript:;">北科汇智公司</a></li>
+</ul>
+</li>
+							<li class="navto-search"><a href="javascript:;" class="search-show active"><i class="fa fa-search"></i></a></li>
+					</ul>
+				<div class="topbar">
+			<ul class="site-nav topmenu">
+												<li class="menusns menu-item-has-children">
+					<a href="javascript:;">关注我们</a>
+					<ul class="sub-menu">
+						<li><a class="sns-wechat" href="javascript:;" title="MongoDB中文社区" data-src="https://mongoing.com/wp-content/uploads/2020/11/bb79e7adc0d10cc.png">MongoDB中文社区</a></li>											</ul>
+				</li>
+							</ul>
+											<a rel="nofollow" href="javascript:;" class="signin-loader">Hi, 请登录</a>
+				&nbsp; &nbsp; <a rel="nofollow" href="javascript:;" class="signup-loader">我要注册</a>
+				&nbsp; &nbsp; <a rel="nofollow" href="javascript:;">找回密码</a>
+					</div>
+							<i class="fa fa-bars m-icon-nav"></i>
+											<a rel="nofollow" href="javascript:;" class="signin-loader m-icon-user"><i class="fa fa-user"></i></a>
+						</div>
+</header>
+<div class="site-search">
+	<div class="container">
+		<form method="get" class="site-search-form" action="https://mongoing.com/"><input class="search-input" name="s" type="text" placeholder="输入关键字" value="" required="required"><button class="search-btn" type="submit"><i class="fa fa-search"></i></button></form>	</div>
+</div>
+	<div class="breadcrumbs">
+		<div class="container"></div>
+	</div>
+
+    <div id="primary" class="content-area"><main id="main" class="site-main" role="main">
+    
+        <div class="wedocs-single-wrap">
+
+            
+                <div class="wedocs-sidebar wedocs-hide-mobile">
+    
+    <h3 class="widget-title">MongoDB初学者教程——7天学习MongoDB</h3>
+
+            <ul class="doc-nav-list">
+            <li class="page_item page-item-33643 wd-state-closed"><a href="javascript:;">什么是MongoDB？简介，架构，功能和示例</a></li>
+<li class="page_item page-item-33646 wd-state-closed"><a href="javascript:;">NoSQL教程：了解NoSQL的功能，类型，含义，优势</a></li>
+<li class="page_item page-item-33666 wd-state-closed"><a href="javascript:;">如何在Windows上下载和安装MongoDB</a></li>
+<li class="page_item page-item-33696 wd-state-closed"><a href="javascript:;">在Cloud中安装MongoDB：AWS，Google，Azure</a></li>
+<li class="page_item page-item-33713 wd-state-closed"><a href="javascript:;">MongoDB如何创建数据库和集合</a></li>
+<li class="page_item page-item-33721 wd-state-closed"><a href="javascript:;">使用insert（）在MongoDB中插入数组</a></li>
+<li class="page_item page-item-33726 wd-state-closed"><a href="javascript:;">MongoDB主键：使用ObjectId（）设置_id字段</a></li>
+<li class="page_item page-item-33750 wd-state-closed"><a href="javascript:;">使用find（）和示例的MongoDB查询文档</a></li>
+<li class="page_item page-item-33753 wd-state-closed"><a href="javascript:;">MongoDB游标教程：通过示例学习</a></li>
+<li class="page_item page-item-33755 wd-state-closed"><a href="javascript:;">使用Sort（）和Limit（）排序查询MongoDB 实例</a></li>
+<li class="page_item page-item-33757 wd-state-closed"><a href="javascript:;">MongoDB Count（）函数和Remove（）函数</a></li>
+<li class="page_item page-item-33759 wd-state-closed"><a href="javascript:;">使用 Update（）更新MongoDB文档</a></li>
+<li class="page_item page-item-33764 wd-state-closed"><a href="javascript:;">MongoDB安全，监控和备份（Mongodump）</a></li>
+<li class="page_item page-item-33769 wd-state-closed"><a href="javascript:;">如何在MongoDB中创建用户并添加角色</a></li>
+<li class="page_item page-item-33777 wd-state-closed"><a href="javascript:;">使用Kerberos身份验证配置MongoDB：X.509证书</a></li>
+<li class="page_item page-item-33781 wd-state-closed"><a href="javascript:;">MongoDB副本集</a></li>
+<li class="page_item page-item-33785 wd-state-closed"><a href="javascript:;">MongoDB分片</a></li>
+<li class="page_item page-item-33787 wd-state-closed"><a href="javascript:;">MongoDB索引-createIndex（）与dropindex（）</a></li>
+<li class="page_item page-item-33800 wd-state-closed"><a href="javascript:;">MongoDB正则表达式（Regex）</a></li>
+<li class="page_item page-item-33813 wd-state-closed"><a href="javascript:;">2019年9种最佳MongoDB GUI工具</a></li>
+<li class="page_item page-item-33823 wd-state-closed"><a href="javascript:;">MongoDB高频面试题</a></li>
+        </ul>
+    </div>
+
+            
+            <div class="wedocs-single-content">
+                <ol class="wedocs-breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList"><li><i class="wedocs-icon wedocs-icon-home"></i></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="index1.html">
+            <span itemprop="name">主页</span></a>
+            <meta itemprop="position" content="1">
+        </li><li class="delimiter"><i class="wedocs-icon wedocs-icon-angle-right"></i></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="javascript:;">
+            <span itemprop="name">文档</span></a>
+            <meta itemprop="position" content="2">
+        </li><li class="delimiter"><i class="wedocs-icon wedocs-icon-angle-right"></i></li> <li><span class="current">MongoDB初学者教程——7天学习MongoDB</span></li></ol>
+                <article id="post-33642" class="post-33642 docs type-docs status-publish hentry" itemscope="" itemtype="http://schema.org/Article">
+                    <header class="entry-header">
+                        <h1 class="entry-title" itemprop="headline">MongoDB初学者教程——7天学习MongoDB</h1>
+                                            </header><!-- .entry-header -->
+
+                    <div class="entry-content" itemprop="articleBody">
+                        <p>MongoDB是面向文档的NoSQL数据库，用于大量数据存储。通过此课程的学习，您将了解如何访问Mongodb及其重要功能，例如索引，正则表达式，分片数据等。</p>
+<p>&nbsp;</p>
+<h3>我应该知道些什么？</h3>
+<p>此课程是为初学者设计的。当然，有一定<a href="javascript:;">SQL</a>基础，会更有帮助。</p>
+<p>&nbsp;</p>
+<h3>MongoDB基础</h3>
+<ol>
+<li><a href="javascript:;">什么是MongoDB？简介，架构，功能和示例</a></li>
+<li><a href="javascript:;">NoSQL教程：了解NoSQL的功能，类型，含义，优势</a></li>
+</ol>
+<p>&nbsp;</p>
+<h3>安装MongoDB</h3>
+<ol>
+<li><a href="javascript:;">如何在Windows上下载和安装MongoDB</a></li>
+<li><a href="javascript:;">在Cloud中安装MongoDB：AWS，Google，Azure</a></li>
+</ol>
+<p>&nbsp;</p>
+<h3>MongoDB数据库</h3>
+<ol>
+<li><a href="javascript:;">如何在MongoDB中创建数据库和集合</a></li>
+<li><a href="javascript:;">使用带有示例的insert（）添加MongoDB数组</a></li>
+<li><a href="javascript:;">Mongodb主键：使用ObjectId（）设置_id字段的示例</a></li>
+<li><a href="javascript:;">使用find（）和示例的MongoDB查询文档</a></li>
+<li><a href="javascript:;">MongoDB游标教程：通过示例学习</a></li>
+<li><a href="javascript:;">带示例的Sort（）和Limit（）查询的MongoDB订单</a></li>
+<li><a href="javascript:;">MongoDB Count（）和Remove（）函数与示例</a></li>
+<li><a href="javascript:;">带有示例的MongoDB Update（）文档</a></li>
+</ol>
+<p>&nbsp;</p>
+<h3>MongoDB管理</h3>
+<ol>
+<li><a href="javascript:;">MongoDB安全性，备份和监控</a></li>
+<li><a href="javascript:;">如何在MongoDB中创建用户并添加角色</a></li>
+<li><a href="javascript:;">使用Kerberos身份验证配置MongoDB：509证书</a></li>
+<li><a href="javascript:;">MongoDB副本集教程：分步复制示例</a></li>
+<li><a href="javascript:;">MongoDB分片：带示例的分步教程</a></li>
+<li><a href="javascript:;">MongoDB索引教程-createIndex（），dropindex（）示例</a></li>
+<li><a href="javascript:;">MongoDB正则表达式（Regex）与示例</a></li>
+</ol>
+<h3>最后步骤</h3>
+<ol>
+<li><a href="javascript:;">9种最佳MongoDB GUI工具</a></li>
+<li><a href="javascript:;">MongoDB面试问答</a></li>
+</ol>
+<p>&nbsp;</p>
+<p>源地址：<a href="javascript:;">https://www.guru99.com/mongodb-tutorials.html</a></p>
+<p>&nbsp;</p>
+<p>本初学者教程由社区翻译委员徐扬翻译，感谢徐扬和翻译小组的辛勤付出！</p>
+<p>&nbsp;</p>
+<div class="article-child well"><h3>文章</h3><ul><li class="page_item page-item-33643 wd-state-closed"><a href="javascript:;">什么是MongoDB？简介，架构，功能和示例</a></li>
+<li class="page_item page-item-33646 wd-state-closed"><a href="javascript:;">NoSQL教程：了解NoSQL的功能，类型，含义，优势</a></li>
+<li class="page_item page-item-33666 wd-state-closed"><a href="javascript:;">如何在Windows上下载和安装MongoDB</a></li>
+<li class="page_item page-item-33696 wd-state-closed"><a href="javascript:;">在Cloud中安装MongoDB：AWS，Google，Azure</a></li>
+<li class="page_item page-item-33713 wd-state-closed"><a href="javascript:;">MongoDB如何创建数据库和集合</a></li>
+<li class="page_item page-item-33721 wd-state-closed"><a href="javascript:;">使用insert（）在MongoDB中插入数组</a></li>
+<li class="page_item page-item-33726 wd-state-closed"><a href="javascript:;">MongoDB主键：使用ObjectId（）设置_id字段</a></li>
+<li class="page_item page-item-33750 wd-state-closed"><a href="javascript:;">使用find（）和示例的MongoDB查询文档</a></li>
+<li class="page_item page-item-33753 wd-state-closed"><a href="javascript:;">MongoDB游标教程：通过示例学习</a></li>
+<li class="page_item page-item-33755 wd-state-closed"><a href="javascript:;">使用Sort（）和Limit（）排序查询MongoDB 实例</a></li>
+<li class="page_item page-item-33757 wd-state-closed"><a href="javascript:;">MongoDB Count（）函数和Remove（）函数</a></li>
+<li class="page_item page-item-33759 wd-state-closed"><a href="javascript:;">使用 Update（）更新MongoDB文档</a></li>
+<li class="page_item page-item-33764 wd-state-closed"><a href="javascript:;">MongoDB安全，监控和备份（Mongodump）</a></li>
+<li class="page_item page-item-33769 wd-state-closed"><a href="javascript:;">如何在MongoDB中创建用户并添加角色</a></li>
+<li class="page_item page-item-33777 wd-state-closed"><a href="javascript:;">使用Kerberos身份验证配置MongoDB：X.509证书</a></li>
+<li class="page_item page-item-33781 wd-state-closed"><a href="javascript:;">MongoDB副本集</a></li>
+<li class="page_item page-item-33785 wd-state-closed"><a href="javascript:;">MongoDB分片</a></li>
+<li class="page_item page-item-33787 wd-state-closed"><a href="javascript:;">MongoDB索引-createIndex（）与dropindex（）</a></li>
+<li class="page_item page-item-33800 wd-state-closed"><a href="javascript:;">MongoDB正则表达式（Regex）</a></li>
+<li class="page_item page-item-33813 wd-state-closed"><a href="javascript:;">2019年9种最佳MongoDB GUI工具</a></li>
+<li class="page_item page-item-33823 wd-state-closed"><a href="javascript:;">MongoDB高频面试题</a></li>
+</ul></div>                    </div><!-- .entry-content -->
+
+                    <footer class="entry-footer wedocs-entry-footer">
+                                                    <span class="wedocs-help-link wedocs-hide-print wedocs-hide-mobile">
+                                <i class="wedocs-icon wedocs-icon-envelope"></i>
+                                仍然有问题？ <a id="wedocs-stuck-modal" href="#">我们要如何帮助您？</a>                            </span>
+                        
+                        <div class="wedocs-article-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+                            <meta itemprop="name" content="xica">
+                            <meta itemprop="url" content="https://mongoing.com/archives/author/xica">
+                        </div>
+
+                        <meta itemprop="datePublished" content="2020-04-11T10:21:47+08:00">
+                        <time itemprop="dateModified" datetime="2020-09-03T22:23:21+08:00">最后更新：2020/09/03</time>
+                    </footer>
+
+                    
+                                            
+<div class="wedocs-feedback-wrap wedocs-hide-print">
+    
+    这篇文章对您有用吗？
+    <span class="vote-link-wrap">
+        <a href="#" class="wedocs-tip positive" data-id="33642" data-type="positive" title="6人发现这有用">
+            是
+                            <span class="count">6</span>
+                    </a>
+        <a href="#" class="wedocs-tip negative" data-id="33642" data-type="negative" title="1 人发现此无用">
+            否
+                            <span class="count">1</span>
+                    </a>
+    </span>
+</div>                    
+                                            
+<div class="wedocs-modal-backdrop" id="wedocs-modal-backdrop"></div>
+<div id="wedocs-contact-modal" class="wedocs-contact-modal wedocs-hide-print">
+    <div class="wedocs-modal-header">
+        <h1>我们要如何帮助您？</h1>
+        <a href="#" id="wedocs-modal-close" class="wedocs-modal-close"><i class="wedocs-icon wedocs-icon-times"></i></a>
+    </div>
+
+    <div class="wedocs-modal-body">
+        <div id="wedocs-modal-errors"></div>
+        <form id="wedocs-contact-modal-form" action="" method="post">
+            <div class="wedocs-form-row">
+                <label for="name">名称</label>
+
+                <div class="wedocs-form-field">
+                    <input type="text" name="name" id="name" placeholder="" value="" required="">
+                </div>
+            </div>
+
+            <div class="wedocs-form-row">
+                <label for="name">邮件</label>
+
+                <div class="wedocs-form-field">
+                    <input type="email" name="email" id="email" placeholder="you@example.com" value="" required="">
+                </div>
+            </div>
+
+            <div class="wedocs-form-row">
+                <label for="name">主题</label>
+
+                <div class="wedocs-form-field">
+                    <input type="text" name="subject" id="subject" placeholder="" value="" required="">
+                </div>
+            </div>
+
+            <div class="wedocs-form-row">
+                <label for="name">信息</label>
+
+                <div class="wedocs-form-field">
+                    <textarea type="message" name="message" id="message" required=""></textarea>
+                </div>
+            </div>
+
+            <div class="wedocs-form-action">
+                <input type="submit" name="submit" value="发送">
+                <input type="hidden" name="doc_id" value="33642">
+                <input type="hidden" name="action" value="wedocs_contact_feedback">
+            </div>
+        </form>
+    </div>
+</div>                    
+                                                                        <div class="wedocs-comments-wrap">
+                                <div class="title" id="comments">
+	<h3>评论 <small>抢沙发</small></h3>
+</div>
+<div id="respond" class="no_webshot">
+		<div class="comment-signarea">
+		<h3 class="text-muted">评论前必须登录！</h3>
+		<p>
+			<a rel="nofollow" href="javascript:;" class="btn btn-primary signin-loader">立即登录</a> &nbsp; 
+			<a rel="nofollow" href="javascript:;" class="btn btn-default signup-loader">注册</a>
+		</p>
+	</div>
+	</div>
+                            </div>
+                                            
+                </article><!-- #post-## -->
+            </div><!-- .wedocs-single-content -->
+        </div><!-- .wedocs-single-wrap -->
+
+    
+    </main><!-- .site-main --></div><!-- .content-area -->
+
+<footer class="footer">
+	<div class="container">
+						<p>&copy; 2014-2021 &nbsp; <a href="index1.html">MongoDB中文社区</a> &nbsp; <a href="javascript:;">网站地图</a>
+</p>
+		<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c3b30d6a14b3ee8b70ca6ef4ede1b1b5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>	</div>
+</footer>
+
+
+<div class="rollbar rollbar-rm"><ul><li class="rollbar-totop"><a href="javascript:(TBUI.scrollTo());"><i class="fa fa-angle-up"></i><span>回顶</span></a><h6>回顶部<i></i></h6></li><li class="rollbar-qrcode"><a href="javascript:;"><i class="fa fa-qrcode"></i><span>微信公众号咨询</span></a><h6>关注微信<span class="copy-wechat-wrap">：mongoing-mongoing<br><span data-id="mongoing-mongoing" class="copy-wechat-number">复制微信号</span></span><img src="static/picture/fc6c3ed2083f8ba.png"><i></i></h6></li><li><a target="_blank" href="javascript:;"><i class="fa fa-globe"></i><span>提交工单咨询</span></a><h6>提交工单咨询<i></i></h6></li></ul></div>
+<script>window.TBUI={"www":"https:\/\/mongoing.com","uri":"https:\/\/mongoing.com\/wp-content\/themes\/dux","ver":"7.1","roll":"1 2","ajaxpager":"1","fullimage":false,"url_rp":"https:\/\/mongoing.com\/reset-password","captcha":0,"captcha_appid":"","captcha_comment":1}</script>
+<script type='text/javascript' src='static/js/anchor.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var weDocs_Vars = {"ajaxurl":"https:\/\/mongoing.com\/wp-admin\/admin-ajax.php","nonce":"1161362565","style":"https:\/\/mongoing.com\/wp-content\/plugins\/wedocs\/assets\/css\/print.css","powered":"\u00a9 MongoDB\u4e2d\u6587\u793e\u533a, 2021. \u7531 weDocs \u9a71\u52a8<br>https:\/\/mongoing.com"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='static/js/frontend.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/mongoing.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='static/js/scripts.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ebd_inline = {"ajaxurl":"https:\/\/mongoing.com\/wp-admin\/admin-ajax.php","ajax_nonce":"ae0008bd6e"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='static/js/email-before-download-public.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var pollsL10n = {"ajax_url":"https:\/\/mongoing.com\/wp-admin\/admin-ajax.php","text_wait":"\u60a8\u7684\u4e0a\u4e00\u4e2a\u8bf7\u6c42\u4ecd\u5728\u5904\u7406\u4e2d\u3002\u8bf7\u7b49\u4e00\u4e0b......","text_valid":"\u8bf7\u9009\u62e9\u6709\u6548\u7684\u6295\u7968\u7b54\u6848\u3002","text_multiple":"\u5141\u8bb8\u7684\u6700\u5927\u9009\u62e9\u6570\u91cf\uff1a","show_loading":"1","show_fading":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='static/js/polls-js.js'></script>
+<script type='text/javascript' src='static/js/bootstrap.min.js'></script>
+<script type='text/javascript' src='static/js/loader.js'></script>
+<script type='text/javascript' src='static/js/wp-embed.min.js'></script>
+</body>
+</html>
+<!-- Dynamic page generated in 0.690 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2021-06-04 11:45:06 -->
+
+<!-- super cache -->

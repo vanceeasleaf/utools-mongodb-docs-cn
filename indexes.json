@@ -1,0 +1,872 @@
+[
+  {
+    "t": "2d 索引",
+    "d": "2d 索引 - MongoDB-CN-Manual",
+    "p": "pages/2d-indexes.html"
+  },
+  {
+    "t": "2dsphere 索引",
+    "d": "2dsphere 索引 - MongoDB-CN-Manual",
+    "p": "pages/2dsphere-indexes.html"
+  },
+  {
+    "t": "使用 mongo Shell帮助",
+    "d": "使用 mongo Shell帮助 - MongoDB-CN-Manual",
+    "p": "pages/access-the-mongo-shell-help.html"
+  },
+  {
+    "t": "聚合命令对比",
+    "d": "聚合命令对比 - MongoDB-CN-Manual",
+    "p": "pages/aggregation-commands-commparison.html"
+  },
+  {
+    "t": "聚合管道和分片集合",
+    "d": "聚合管道和分片集合 - MongoDB-CN-Manual",
+    "p": "pages/aggregation-pipeline-and-sharded-collections.html"
+  },
+  {
+    "t": "聚合管道优化",
+    "d": "聚合管道优化 - MongoDB-CN-Manual",
+    "p": "pages/aggregation-pipeline-optimization.html"
+  },
+  {
+    "t": "聚合管道",
+    "d": "聚合管道 - MongoDB-CN-Manual",
+    "p": "pages/aggregation-pipeline.html"
+  },
+  {
+    "t": "聚合参考",
+    "d": "聚合参考 - MongoDB-CN-Manual",
+    "p": "pages/aggregation-reference.html"
+  },
+  {
+    "t": "MongoDB聚合",
+    "d": "MongoDB聚合 - MongoDB-CN-Manual",
+    "p": "pages/aggregation.html"
+  },
+  {
+    "t": "技术问答",
+    "d": "技术问答 | MongoDB中文社区",
+    "p": "pages/anspress.html"
+  },
+  {
+    "t": "附录-C-用于测试的OpenSSL客户端证书",
+    "d": "附录-C-用于测试的OpenSSL客户端证书 - MongoDB-CN-Manual",
+    "p": "pages/appendix-c-openssl-client-certificates-for-testing.html"
+  },
+  {
+    "t": "附录",
+    "d": "附录 - MongoDB-CN-Manual",
+    "p": "pages/appendix.html"
+  },
+  {
+    "t": "审计",
+    "d": "审计 - MongoDB-CN-Manual",
+    "p": "pages/auditing.html"
+  },
+  {
+    "t": "身份验证",
+    "d": "身份验证 - MongoDB-CN-Manual",
+    "p": "pages/authentication.html"
+  },
+  {
+    "t": "基础知识",
+    "d": "基础知识 | MongoDB中文社区",
+    "p": "pages/basic-knowledge.html"
+  },
+  {
+    "t": "贝贝的博客",
+    "d": "贝贝的博客 | MongoDB中文社区",
+    "p": "pages/beibei.html"
+  },
+  {
+    "t": "最佳实践",
+    "d": "最佳实践 | MongoDB中文社区",
+    "p": "pages/best-practices.html"
+  },
+  {
+    "t": "BSON类型",
+    "d": "BSON类型 - MongoDB-CN-Manual",
+    "p": "pages/bson-types.html"
+  },
+  {
+    "t": "批量写入操作",
+    "d": "批量写入操作 - MongoDB-CN-Manual",
+    "p": "pages/bulk-write-operations.html"
+  },
+  {
+    "t": "MongoDB参考",
+    "d": "MongoDB参考 - MongoDB-CN-Manual",
+    "p": "pages/can-kao.html"
+  },
+  {
+    "t": "变更事件",
+    "d": "变更事件 - MongoDB-CN-Manual",
+    "p": "pages/change-event.html"
+  },
+  {
+    "t": "变更流生产建议",
+    "d": "变更流生产建议 - MongoDB-CN-Manual",
+    "p": "pages/change-streams-production-recommendations.html"
+  },
+  {
+    "t": "Change Streams变更流",
+    "d": "Change Streams变更流 - MongoDB-CN-Manual",
+    "p": "pages/change-streams.html"
+  },
+  {
+    "t": "复合索引",
+    "d": "复合索引 - MongoDB-CN-Manual",
+    "p": "pages/compound-indexes.html"
+  },
+  {
+    "t": "FAQ: MongoDB并发",
+    "d": "FAQ: MongoDB并发 - MongoDB-CN-Manual",
+    "p": "pages/concurrency.html"
+  },
+  {
+    "t": "配置和维护",
+    "d": "配置和维护 - MongoDB-CN-Manual",
+    "p": "pages/configuration-and-maintenance.html"
+  },
+  {
+    "t": "配置mongo Shell",
+    "d": "配置mongo Shell - MongoDB-CN-Manual",
+    "p": "pages/configure-the-mongo-shell.html"
+  },
+  {
+    "t": "MongoDB中文社区组委会成员介绍",
+    "d": "MongoDB中文社区组委会成员介绍 | MongoDB中文社区",
+    "p": "pages/core-team-members.html"
+  },
+  {
+    "t": "存储引擎",
+    "d": "存储引擎 - MongoDB-CN-Manual",
+    "p": "pages/cun-chu-yin-qing.html"
+  },
+  {
+    "t": "MongoDB存储",
+    "d": "MongoDB存储 - MongoDB-CN-Manual",
+    "p": "pages/cun-chu.html"
+  },
+  {
+    "t": "数据模型设计",
+    "d": "数据模型设计 - MongoDB-CN-Manual",
+    "p": "pages/data-model-design.html"
+  },
+  {
+    "t": "数据建模介绍",
+    "d": "数据建模介绍 - MongoDB-CN-Manual",
+    "p": "pages/data-modeling-introduction.html"
+  },
+  {
+    "t": "mongo Shell中的数据类型",
+    "d": "mongo Shell中的数据类型 - MongoDB-CN-Manual",
+    "p": "pages/data-types-in-the-mongo-shell.html"
+  },
+  {
+    "t": "数据库和集合",
+    "d": "数据库和集合 - MongoDB-CN-Manual",
+    "p": "pages/databases-and-collections.html"
+  },
+  {
+    "t": "db.collection.count()",
+    "d": "db.collection.count() - MongoDB-CN-Manual",
+    "p": "pages/db-collection-count.html"
+  },
+  {
+    "t": "db.collection.distinct()",
+    "d": "db.collection.distinct() - MongoDB-CN-Manual",
+    "p": "pages/db-collection-distinct.html"
+  },
+  {
+    "t": "默认的MongoDB端口",
+    "d": "默认的MongoDB端口 - MongoDB-CN-Manual",
+    "p": "pages/default-mongodb-port.html"
+  },
+  {
+    "t": "默认的MongoDB读/写关注",
+    "d": "默认的MongoDB读/写关注 - MongoDB-CN-Manual",
+    "p": "pages/default-mongodb-read-concerns-and-write-concerns.html"
+  },
+  {
+    "t": "删除文档",
+    "d": "删除文档 - MongoDB-CN-Manual",
+    "p": "pages/delete-documents.html"
+  },
+  {
+    "t": "开发检查列表",
+    "d": "开发检查列表 - MongoDB-CN-Manual",
+    "p": "pages/development-checklist.html"
+  },
+  {
+    "t": "文档",
+    "d": "文档 - MongoDB-CN-Manual",
+    "p": "pages/documents.html"
+  },
+  {
+    "t": "软件下载镜像",
+    "d": "软件下载镜像 | MongoDB中文社区",
+    "p": "pages/downloads-jingxiang.html"
+  },
+  {
+    "t": "Email Protection",
+    "d": "Email Protection | Cloudflare",
+    "p": "pages/email-protection.html"
+  },
+  {
+    "t": "启用访问控制",
+    "d": "启用访问控制 - MongoDB-CN-Manual",
+    "p": "pages/enable-access-control.html"
+  },
+  {
+    "t": "E叔的博客",
+    "d": "E叔的博客 | MongoDB中文社区",
+    "p": "pages/eshujiushiwo.html"
+  },
+  {
+    "t": "MongoDB Extended JSON (v1)",
+    "d": "MongoDB Extended JSON (v1) - MongoDB-CN-Manual",
+    "p": "pages/extended-json-v1.html"
+  },
+  {
+    "t": "FAQ:MongoDB 存储",
+    "d": "FAQ:MongoDB 存储 - MongoDB-CN-Manual",
+    "p": "pages/faq-mongodb-storage.html"
+  },
+  {
+    "t": "MongoDB FAQ",
+    "d": "MongoDB FAQ - MongoDB-CN-Manual",
+    "p": "pages/faq.html"
+  },
+  {
+    "t": "MongoDB分片",
+    "d": "MongoDB分片 - MongoDB-CN-Manual",
+    "p": "pages/fen-pian.html"
+  },
+  {
+    "t": "徐雷的博客",
+    "d": "徐雷的博客 | MongoDB中文社区",
+    "p": "pages/frank.html"
+  },
+  {
+    "t": "geoHaystack 索引",
+    "d": "geoHaystack 索引 - MongoDB-CN-Manual",
+    "p": "pages/geohaystack-indexes.html"
+  },
+  {
+    "t": "地理空间查询",
+    "d": "地理空间查询 - MongoDB-CN-Manual",
+    "p": "pages/geospatial-queries.html"
+  },
+  {
+    "t": "入门",
+    "d": "入门 - MongoDB-CN-Manual",
+    "p": "pages/getting-started.html"
+  },
+  {
+    "t": "词汇表",
+    "d": "词汇表 - MongoDB-CN-Manual",
+    "p": "pages/glossary.html"
+  },
+  {
+    "t": "MongoDB管理",
+    "d": "MongoDB管理 - MongoDB-CN-Manual",
+    "p": "pages/guan-li.html"
+  },
+  {
+    "t": "郭远威的博客",
+    "d": "郭远威的博客 | MongoDB中文社区",
+    "p": "pages/guoyuanwei.html"
+  },
+  {
+    "t": "哈希索引",
+    "d": "哈希索引 - MongoDB-CN-Manual",
+    "p": "pages/hashed-indexes.html"
+  },
+  {
+    "t": "哈希分片",
+    "d": "哈希分片 - MongoDB-CN-Manual",
+    "p": "pages/hashed-sharding.html"
+  },
+  {
+    "t": "在填充的集合上建立索引",
+    "d": "在填充的集合上建立索引 - MongoDB-CN-Manual",
+    "p": "pages/index-builds-on-populated-collections.html"
+  },
+  {
+    "t": "索引交集",
+    "d": "索引交集 - MongoDB-CN-Manual",
+    "p": "pages/index-intersection.html"
+  },
+  {
+    "t": "索引特性",
+    "d": "索引特性 - MongoDB-CN-Manual",
+    "p": "pages/index-properties.html"
+  },
+  {
+    "t": "MongoDB中文手册|官方文档中文版",
+    "d": "MongoDB中文手册|官方文档中文版 - MongoDB-CN-Manual",
+    "p": "pages/index.html"
+  },
+  {
+    "t": "MongoDB中文社区",
+    "d": "MongoDB中文社区",
+    "p": "pages/index1.html"
+  },
+  {
+    "t": "MongoDB中文社区",
+    "d": "MongoDB中文社区",
+    "p": "pages/index2.html"
+  },
+  {
+    "t": "安装MongoDB — MongoDB Manual 3.4",
+    "d": "安装MongoDB — MongoDB Manual 3.4",
+    "p": "pages/index3.html"
+  },
+  {
+    "t": "MongoDB索引",
+    "d": "MongoDB索引 - MongoDB-CN-Manual",
+    "p": "pages/indexes.html"
+  },
+  {
+    "t": "FAQ: MongoDB索引",
+    "d": "FAQ: MongoDB索引 - MongoDB-CN-Manual",
+    "p": "pages/indexes1.html"
+  },
+  {
+    "t": "索引参考",
+    "d": "索引参考 - MongoDB-CN-Manual",
+    "p": "pages/indexing-reference.html"
+  },
+  {
+    "t": "索引策略",
+    "d": "索引策略 - MongoDB-CN-Manual",
+    "p": "pages/indexing-strategies.html"
+  },
+  {
+    "t": "插入文档",
+    "d": "插入文档 - MongoDB-CN-Manual",
+    "p": "pages/insert-documents.html"
+  },
+  {
+    "t": "安装MongoDB社区版",
+    "d": "安装MongoDB社区版 - MongoDB-CN-Manual",
+    "p": "pages/install-mongodb-community-edition.html"
+  },
+  {
+    "t": "安装MongoDB企业版",
+    "d": "安装MongoDB企业版 - MongoDB-CN-Manual",
+    "p": "pages/install-mongodb-enterprise.html"
+  },
+  {
+    "t": "安装 MongoDB",
+    "d": "安装 MongoDB - MongoDB-CN-Manual",
+    "p": "pages/install-mongodb.html"
+  },
+  {
+    "t": "原理解读",
+    "d": "原理解读 | MongoDB中文社区",
+    "p": "pages/interpretation-of-principles.html"
+  },
+  {
+    "t": "日志记录",
+    "d": "日志记录 - MongoDB-CN-Manual",
+    "p": "pages/journaling.html"
+  },
+  {
+    "t": "联系我们",
+    "d": "联系我们 - MongoDB-CN-Manual",
+    "p": "pages/lian-xi-wo-men.html"
+  },
+  {
+    "t": "管理索引",
+    "d": "管理索引 - MongoDB-CN-Manual",
+    "p": "pages/manage-indexes.html"
+  },
+  {
+    "t": "Map-Reduce 和分片集合",
+    "d": "Map-Reduce 和分片集合 - MongoDB-CN-Manual",
+    "p": "pages/map-reduce-and-sharded-collections.html"
+  },
+  {
+    "t": "Map-Reduce",
+    "d": "Map-Reduce - MongoDB-CN-Manual",
+    "p": "pages/map-reduce.html"
+  },
+  {
+    "t": "衡量索引使用",
+    "d": "衡量索引使用 - MongoDB-CN-Manual",
+    "p": "pages/measure-index-use.html"
+  },
+  {
+    "t": "副本集成员配置教程",
+    "d": "副本集成员配置教程 - MongoDB-CN-Manual",
+    "p": "pages/member-configuration-tutorials.html"
+  },
+  {
+    "t": "一对一嵌套关系模型",
+    "d": "一对一嵌套关系模型 - MongoDB-CN-Manual",
+    "p": "pages/model-one-to-one-relationships-with-embedded-documents.html"
+  },
+  {
+    "t": "MongoDB简介",
+    "d": "MongoDB简介 - MongoDB-CN-Manual",
+    "p": "pages/mongo-introduction.html"
+  },
+  {
+    "t": "mongo Shell 方法",
+    "d": "mongo Shell 方法 - MongoDB-CN-Manual",
+    "p": "pages/mongo-shell-methods.html"
+  },
+  {
+    "t": "mongo Shell 快速参考",
+    "d": "mongo Shell 快速参考 - MongoDB-CN-Manual",
+    "p": "pages/mongo-shell-quick-reference.html"
+  },
+  {
+    "t": "MongoDB备份方法",
+    "d": "MongoDB备份方法 - MongoDB-CN-Manual",
+    "p": "pages/mongodb-backup-methods.html"
+  },
+  {
+    "t": "MongoDB初学者教程——7天学习MongoDB",
+    "d": "MongoDB初学者教程——7天学习MongoDB | MongoDB中文社区",
+    "p": "pages/mongodb-beginner-tutorial.html"
+  },
+  {
+    "t": "MongoDB社区动态",
+    "d": "MongoDB社区动态 | MongoDB中文社区",
+    "p": "pages/mongodb-community-dynamics.html"
+  },
+  {
+    "t": "MongoDB CRUD概念",
+    "d": "MongoDB CRUD概念 - MongoDB-CN-Manual",
+    "p": "pages/mongodb-crud-concepts.html"
+  },
+  {
+    "t": "MongoDB CRUD操作",
+    "d": "MongoDB CRUD操作 - MongoDB-CN-Manual",
+    "p": "pages/mongodb-crud-operations.html"
+  },
+  {
+    "t": "FAQ: MongoDB诊断",
+    "d": "FAQ: MongoDB诊断 - MongoDB-CN-Manual",
+    "p": "pages/mongodb-diagnostics.html"
+  },
+  {
+    "t": "MongoDB白皮书下载",
+    "d": "MongoDB白皮书下载 | MongoDB中文社区",
+    "p": "pages/mongodb-download-white-paper.html"
+  },
+  {
+    "t": "FAQ: MongoDB基础知识",
+    "d": "FAQ: MongoDB基础知识 - MongoDB-CN-Manual",
+    "p": "pages/mongodb-fundamentals.html"
+  },
+  {
+    "t": "MongoDB中的限制与阈值",
+    "d": "MongoDB中的限制与阈值 - MongoDB-CN-Manual",
+    "p": "pages/mongodb-limits-and-thresholds.html"
+  },
+  {
+    "t": "FAQ: MongoDB存储",
+    "d": "FAQ: MongoDB存储 - MongoDB-CN-Manual",
+    "p": "pages/mongodb-storage.html"
+  },
+  {
+    "t": "MongoDB中文社区成员",
+    "d": "MongoDB中文社区成员 | MongoDB中文社区",
+    "p": "pages/mongodb-technical-support.html"
+  },
+  {
+    "t": "MongoDB入门培训",
+    "d": "MongoDB入门培训 | 结业考核合格证书展示 | MongoDB中文社区",
+    "p": "pages/mongodb-training-assessment-certificate.html"
+  },
+  {
+    "t": "MongoDB 版本管理",
+    "d": "MongoDB 版本管理 - MongoDB-CN-Manual",
+    "p": "pages/mongodb-versioning.html"
+  },
+  {
+    "t": "在线研讨会集锦",
+    "d": "在线研讨会集锦 | get MongoDB视频 | MongoDB中文社区",
+    "p": "pages/mongodb-webinar-video.html"
+  },
+  {
+    "t": "MongoDB高手课",
+    "d": "MongoDB高手课 | MongoDB中文社区",
+    "p": "pages/mongodb_ace.html"
+  },
+  {
+    "t": "MongoDB监控",
+    "d": "MongoDB监控 - MongoDB-CN-Manual",
+    "p": "pages/monitoring-for-mongodb.html"
+  },
+  {
+    "t": "多键索引",
+    "d": "多键索引 - MongoDB-CN-Manual",
+    "p": "pages/multikey-indexes.html"
+  },
+  {
+    "t": "网络和配置强化",
+    "d": "网络和配置强化 - MongoDB-CN-Manual",
+    "p": "pages/network-and-configuration-hardening.html"
+  },
+  {
+    "t": "新闻",
+    "d": "新闻 | MongoDB中文社区",
+    "p": "pages/news.html"
+  },
+  {
+    "t": "社区大咖博客",
+    "d": "社区大咖博客 | MongoDB中文社区",
+    "p": "pages/niurenblog.html"
+  },
+  {
+    "t": "线下用户大会",
+    "d": "线下用户大会 | MongoDB中文社区",
+    "p": "pages/offline-user-conference.html"
+  },
+  {
+    "t": "线下用户组",
+    "d": "线下用户组 | MongoDB中文社区",
+    "p": "pages/offline-user-groups.html"
+  },
+  {
+    "t": "运维监控",
+    "d": "运维监控 | MongoDB中文社区",
+    "p": "pages/operation-and-maintenance-monitoring.html"
+  },
+  {
+    "t": "操作检查列表",
+    "d": "操作检查列表 - MongoDB-CN-Manual",
+    "p": "pages/operations-checklist.html"
+  },
+  {
+    "t": "性能优化",
+    "d": "性能优化 | MongoDB中文社区",
+    "p": "pages/performance-optimization.html"
+  },
+  {
+    "t": "性能",
+    "d": "性能 - MongoDB-CN-Manual",
+    "p": "pages/performance.html"
+  },
+  {
+    "t": "生产注意事项 (分片集群)",
+    "d": "生产注意事项 (分片集群) - MongoDB-CN-Manual",
+    "p": "pages/production-considerations-sharded-clusters.html"
+  },
+  {
+    "t": "产品说明",
+    "d": "产品说明 - MongoDB-CN-Manual",
+    "p": "pages/production-notes.html"
+  },
+  {
+    "t": "驱动程序 API",
+    "d": "驱动程序 API - MongoDB-CN-Manual",
+    "p": "pages/qu-dong-cheng-xu-api.html"
+  },
+  {
+    "t": "查询文档",
+    "d": "查询文档 - MongoDB-CN-Manual",
+    "p": "pages/query-documents.html"
+  },
+  {
+    "t": "范围分片",
+    "d": "范围分片 - MongoDB-CN-Manual",
+    "p": "pages/ranged-sharding.html"
+  },
+  {
+    "t": "Read Concern读关注",
+    "d": "Read Concern读关注 - MongoDB-CN-Manual",
+    "p": "pages/read-isolation-read-concern.html"
+  },
+  {
+    "t": "副本集数据同步",
+    "d": "副本集数据同步 - MongoDB-CN-Manual",
+    "p": "pages/replica-set-data-synchronization.html"
+  },
+  {
+    "t": "副本集部署架构",
+    "d": "副本集部署架构 - MongoDB-CN-Manual",
+    "p": "pages/replica-set-deployment-architectures.html"
+  },
+  {
+    "t": "副本集维护教程",
+    "d": "副本集维护教程 - MongoDB-CN-Manual",
+    "p": "pages/replica-set-maintenance-tutorials.html"
+  },
+  {
+    "t": "副本集成员",
+    "d": "副本集成员 - MongoDB-CN-Manual",
+    "p": "pages/replica-set-members.html"
+  },
+  {
+    "t": "副本集日志",
+    "d": "副本集日志 - MongoDB-CN-Manual",
+    "p": "pages/replica-set-oplog.html"
+  },
+  {
+    "t": "FAQ: MongoDB复制和副本集",
+    "d": "FAQ: MongoDB复制和副本集 - MongoDB-CN-Manual",
+    "p": "pages/replication-and-replicasets.html"
+  },
+  {
+    "t": "MongoDB复制参考",
+    "d": "MongoDB复制参考 - MongoDB-CN-Manual",
+    "p": "pages/replication-reference.html"
+  },
+  {
+    "t": "MongoDB复制",
+    "d": "MongoDB复制 - MongoDB-CN-Manual",
+    "p": "pages/replication.html"
+  },
+  {
+    "t": "资源分享",
+    "d": "资源分享 | MongoDB中文社区",
+    "p": "pages/resources.html"
+  },
+  {
+    "t": "可重试读取",
+    "d": "可重试读取 - MongoDB-CN-Manual",
+    "p": "pages/retryable-reads.html"
+  },
+  {
+    "t": "可重试写入",
+    "d": "可重试写入 - MongoDB-CN-Manual",
+    "p": "pages/retryable-writes.html"
+  },
+  {
+    "t": "模式验证",
+    "d": "模式验证 - MongoDB-CN-Manual",
+    "p": "pages/schema-validation.html"
+  },
+  {
+    "t": "安全检查列表",
+    "d": "安全检查列表 - MongoDB-CN-Manual",
+    "p": "pages/security-checklist.html"
+  },
+  {
+    "t": "安全参考",
+    "d": "安全参考 - MongoDB-CN-Manual",
+    "p": "pages/security-reference.html"
+  },
+  {
+    "t": "MongoDB安全",
+    "d": "MongoDB安全 - MongoDB-CN-Manual",
+    "p": "pages/security.html"
+  },
+  {
+    "t": "服务器会话",
+    "d": "服务器会话 - MongoDB-CN-Manual",
+    "p": "pages/server-sessions.html"
+  },
+  {
+    "t": "分片键",
+    "d": "分片键 - MongoDB-CN-Manual",
+    "p": "pages/shard-keys.html"
+  },
+  {
+    "t": "分片管理",
+    "d": "分片管理 - MongoDB-CN-Manual",
+    "p": "pages/sharded-cluster-administration.html"
+  },
+  {
+    "t": "分片集群组件",
+    "d": "分片集群组件 - MongoDB-CN-Manual",
+    "p": "pages/sharded-cluster-components.html"
+  },
+  {
+    "t": "分片参考",
+    "d": "分片参考 - MongoDB-CN-Manual",
+    "p": "pages/sharding-reference.html"
+  },
+  {
+    "t": "FAQ: MongoDB分片",
+    "d": "FAQ: MongoDB分片 - MongoDB-CN-Manual",
+    "p": "pages/sharding-with-mongodb.html"
+  },
+  {
+    "t": "生产注意事项",
+    "d": "生产注意事项 - MongoDB-CN-Manual",
+    "p": "pages/sheng-chan-zhu-yi-shi-xiang.html"
+  },
+  {
+    "t": "使用块进行数据分区",
+    "d": "使用块进行数据分区 - MongoDB-CN-Manual",
+    "p": "pages/shi-yong-kuai-jin-hang-shu-ju-fen-qu.html"
+  },
+  {
+    "t": "数据库命令",
+    "d": "数据库命令 - MongoDB-CN-Manual",
+    "p": "pages/shu-ju-ku-ming-ling.html"
+  },
+  {
+    "t": "MongoDB数据模型",
+    "d": "MongoDB数据模型 - MongoDB-CN-Manual",
+    "p": "pages/shu-ju-mo-xing.html"
+  },
+  {
+    "t": "数据中心意识",
+    "d": "数据中心意识 - MongoDB-CN-Manual",
+    "p": "pages/shu-ju-zhong-xin-yi-shi.html"
+  },
+  {
+    "t": "单字段索引",
+    "d": "单字段索引 - MongoDB-CN-Manual",
+    "p": "pages/single-field-indexes.html"
+  },
+  {
+    "t": "SQL 到聚合映射图表",
+    "d": "SQL 到聚合映射图表 - MongoDB-CN-Manual",
+    "p": "pages/sql-to-aggregation-mapping-chart.html"
+  },
+  {
+    "t": "SQL到MongoDB的映射图表",
+    "d": "SQL到MongoDB的映射图表 - MongoDB-CN-Manual",
+    "p": "pages/sql-to-mongodb-mapping-chart.html"
+  },
+  {
+    "t": "MongoDB系统集合",
+    "d": "MongoDB系统集合 - MongoDB-CN-Manual",
+    "p": "pages/sytem-collections.html"
+  },
+  {
+    "t": "Tailable 游标",
+    "d": "Tailable 游标 - MongoDB-CN-Manual",
+    "p": "pages/tailable-cursors.html"
+  },
+  {
+    "t": "文本索引",
+    "d": "文本索引 - MongoDB-CN-Manual",
+    "p": "pages/text-indexes.html"
+  },
+  {
+    "t": "文本搜索",
+    "d": "文本搜索 - MongoDB-CN-Manual",
+    "p": "pages/text-search.html"
+  },
+  {
+    "t": "The mongo Shell",
+    "d": "The mongo Shell - MongoDB-CN-Manual",
+    "p": "pages/the-mongo-shell.html"
+  },
+  {
+    "t": "MongoDB用户手册说明",
+    "d": "MongoDB用户手册说明 - MongoDB-CN-Manual",
+    "p": "pages/the-mongodb-manual-cn.html"
+  },
+  {
+    "t": "TJ的博客",
+    "d": "TJ的博客 | MongoDB中文社区",
+    "p": "pages/tj.html"
+  },
+  {
+    "t": "事务操作",
+    "d": "事务操作 - MongoDB-CN-Manual",
+    "p": "pages/transactions-and-operations.html"
+  },
+  {
+    "t": "MongoDB事务",
+    "d": "MongoDB事务 - MongoDB-CN-Manual",
+    "p": "pages/transactions.html"
+  },
+  {
+    "t": "官网翻译文章",
+    "d": "官网翻译文章 | MongoDB中文社区",
+    "p": "pages/translation-blogs.html"
+  },
+  {
+    "t": "MongoDB中文社区翻译小组",
+    "d": "MongoDB中文社区翻译小组 | MongoDB中文社区",
+    "p": "pages/translators.html"
+  },
+  {
+    "t": "更新文档",
+    "d": "更新文档 - MongoDB-CN-Manual",
+    "p": "pages/update-documents.html"
+  },
+  {
+    "t": "将社区版MongoDB升级到企业版MongoDB",
+    "d": "将社区版MongoDB升级到企业版MongoDB - MongoDB-CN-Manual",
+    "p": "pages/upgrade-mongodb-community-to-mongodb-enterprise.html"
+  },
+  {
+    "t": "验证MongoDB软件包的完整性",
+    "d": "验证MongoDB软件包的完整性 - MongoDB-CN-Manual",
+    "p": "pages/verify-integrity-of-mongodb-packages.html"
+  },
+  {
+    "t": "中文在线讲座",
+    "d": "中文在线讲座 | MongoDB中文社区",
+    "p": "pages/webinar_cn.html"
+  },
+  {
+    "t": "通配符索引",
+    "d": "通配符索引 - MongoDB-CN-Manual",
+    "p": "pages/wildcard-indexes.html"
+  },
+  {
+    "t": "孔德雨的博客",
+    "d": "孔德雨的博客 | MongoDB中文社区",
+    "p": "pages/wolfkdy.html"
+  },
+  {
+    "t": "Write Concern写关注",
+    "d": "Write Concern写关注 - MongoDB-CN-Manual",
+    "p": "pages/write-acknowledgement-write-concern.html"
+  },
+  {
+    "t": "为mongo Shell编写脚本",
+    "d": "为mongo Shell编写脚本 - MongoDB-CN-Manual",
+    "p": "pages/write-scripts-for-the-mongo-shell.html"
+  },
+  {
+    "t": "夏德军的博客",
+    "d": "夏德军的博客 | MongoDB中文社区",
+    "p": "pages/xiadejun.html"
+  },
+  {
+    "t": "上海小胖的博客",
+    "d": "上海小胖的博客 | MongoDB中文社区",
+    "p": "pages/xiaopang.html"
+  },
+  {
+    "t": "杨亚洲的博客",
+    "d": "杨亚洲的博客 | MongoDB中文社区",
+    "p": "pages/yangyazhou.html"
+  },
+  {
+    "t": "叶翔的博客",
+    "d": "叶翔的博客 | MongoDB中文社区",
+    "p": "pages/ychtiger.html"
+  },
+  {
+    "t": "运算符",
+    "d": "运算符 - MongoDB-CN-Manual",
+    "p": "pages/yun-suan-fu.html"
+  },
+  {
+    "t": "Zale的博客",
+    "d": "Zale的博客 | MongoDB中文社区",
+    "p": "pages/zale.html"
+  },
+  {
+    "t": "耀星的博客",
+    "d": "耀星的博客 | MongoDB中文社区",
+    "p": "pages/zhangyaogxing.html"
+  },
+  {
+    "t": "区",
+    "d": "区 - MongoDB-CN-Manual",
+    "p": "pages/zones.html"
+  },
+  {
+    "t": "张友东的博客",
+    "d": "张友东的博客 | MongoDB中文社区",
+    "p": "pages/zyd.html"
+  }
+]

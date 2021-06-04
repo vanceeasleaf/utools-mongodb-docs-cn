@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link rel="dns-prefetch" href="https://apps.bdimg.com/">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="MongoDB中文社区">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+<script type="text/javascript">var ajaxurl = "https://mongoing.com/wp-admin/admin-ajax.php",ap_nonce 	= "8ff1daf963",apTemplateUrl = "https://mongoing.com/wp-content/plugins/anspress-question-answer/templates/js-template";apQuestionID = "";aplang = {"loading":"\u6b63\u5728\u8f7d\u5165..","sending":"\u53d1\u9001\u8bf7\u6c42","file_size_error":"\u6587\u4ef6\u5927\u5c0f\u5927\u4e8e 0 MB","attached_max":"\u60a8\u5df2\u7ecf\u9644\u52a0\u4e86\u5141\u8bb8\u7684\u9644\u4ef6\u7684\u6700\u5927\u6570\u91cf\u3002","commented":"\u5df2\u8bc4\u8bba","comment":"\u6761\u8bc4\u8bba","cancel":"\u53d6\u6d88","update":"\u66f4\u65b0","your_comment":"\u5199\u4e0b\u4f60\u7684\u8bc4\u8bba\u2026","notifications":"\u901a\u77e5","mark_all_seen":"\u6807\u8bb0\u6240\u6709\u4e3a\u53ef\u89c1","search":"\u641c\u7d22","no_permission_comments":"\u62b1\u6b49\uff0c\u60a8\u65e0\u6743\u9605\u8bfb\u8bc4\u8bba\u3002"};disable_q_suggestion = "";</script>
+		<!-- All in One SEO 4.0.17 -->
+		<title>原理解读 | MongoDB中文社区</title>
+		<meta name="robots" content="noindex, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+		<link rel="canonical" href="https://mongoing.com/archives/category/interpretation-of-principles">
+		<link rel="next" href="https://mongoing.com/interpretation-of-principles/page/2">
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebSite","@id":"https:\/\/mongoing.com\/#website","url":"https:\/\/mongoing.com\/","name":"MongoDB\u4e2d\u6587\u793e\u533a","description":"\u4e2d\u6587\u793e\u533a","publisher":{"@id":"https:\/\/mongoing.com\/#organization"}},{"@type":"Organization","@id":"https:\/\/mongoing.com\/#organization","name":"MongoDB\u4e2d\u6587\u793e\u533a","url":"https:\/\/mongoing.com\/"},{"@type":"BreadcrumbList","@id":"https:\/\/mongoing.com\/archives\/category\/interpretation-of-principles\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/mongoing.com\/#listItem","position":"1","item":{"@id":"https:\/\/mongoing.com\/#item","name":"\u4e3b\u9801","description":"\u4e2d\u6587\u793e\u533a","url":"https:\/\/mongoing.com\/"},"nextItem":"https:\/\/mongoing.com\/interpretation-of-principles#listItem"},{"@type":"ListItem","@id":"https:\/\/mongoing.com\/interpretation-of-principles#listItem","position":"2","item":{"@id":"https:\/\/mongoing.com\/interpretation-of-principles#item","name":"\u539f\u7406\u89e3\u8bfb","url":"https:\/\/mongoing.com\/interpretation-of-principles"},"previousItem":"https:\/\/mongoing.com\/#listItem"}]},{"@type":"CollectionPage","@id":"https:\/\/mongoing.com\/archives\/category\/interpretation-of-principles\/#collectionpage","url":"https:\/\/mongoing.com\/archives\/category\/interpretation-of-principles\/","name":"\u539f\u7406\u89e3\u8bfb | MongoDB\u4e2d\u6587\u793e\u533a","inLanguage":"zh-CN","isPartOf":{"@id":"https:\/\/mongoing.com\/#website"},"breadcrumb":{"@id":"https:\/\/mongoing.com\/archives\/category\/interpretation-of-principles\/#breadcrumblist"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+<link rel='dns-prefetch' href='https://s.w.org/'>
+<link rel='stylesheet' id='anspress-fonts-css' href='static/css/fonts.css' type='text/css' media='all'>
+<link rel='stylesheet' id='anspress-main-css' href='static/css/main.css' type='text/css' media='all'>
+<style id='anspress-main-inline-css' type='text/css'>
+
+		#anspress .ap-q-cells{
+				margin-left: 25px;
+		}
+		#anspress .ap-a-cells{
+				margin-left: 25px;
+		}
+</style>
+<link rel='stylesheet' id='ap-overrides-css' href='https://mongoing.com/wp-content/plugins/anspress-question-answer/templates/css/overrides.css?v=4.1.20&ver=4.1.20' type='text/css' media='all'>
+<link rel='stylesheet' id='wp-block-library-css' href='static/css/style.min.css' type='text/css' media='all'>
+<link rel='stylesheet' id='contact-form-7-css' href='static/css/styles.css' type='text/css' media='all'>
+<link rel='stylesheet' id='email-before-download-css' href='static/css/email-before-download-public.css' type='text/css' media='all'>
+<link rel='stylesheet' id='wp-polls-css' href='static/css/polls-css.css' type='text/css' media='all'>
+<style id='wp-polls-inline-css' type='text/css'>
+.wp-polls .pollbar {
+	margin: 1px;
+	font-size: 8px;
+	line-height: 10px;
+	height: 10px;
+	background-image: url('static/image/pollbg.gif');
+	border: 1px solid #c8c8c8;
+}
+
+</style>
+<link rel='stylesheet' id='dlm-frontend-css' href='static/css/frontend.css' type='text/css' media='all'>
+<link rel='stylesheet' id='_bootstrap-css' href='static/css/bootstrap.min.css' type='text/css' media='all'>
+<link rel='stylesheet' id='_fontawesome-css' href='static/css/font-awesome.min.css' type='text/css' media='all'>
+<link rel='stylesheet' id='_main-css' href='static/css/main1.css' type='text/css' media='all'>
+<script type='text/javascript' src='static/js/jquery.min.js'></script>
+<link rel='https://api.w.org/' href='https://mongoing.com/wp-json/'>
+<meta name="keywords" content="原理解读">
+<style>a:hover, .site-navbar li:hover > a, .site-navbar li.active a:hover, .site-navbar a:hover, .search-on .site-navbar li.navto-search a, .topbar a:hover, .site-nav li.current-menu-item > a, .site-nav li.current-menu-parent > a, .site-search-form a:hover, .branding-primary .btn:hover, .title .more a:hover, .excerpt h2 a:hover, .excerpt .meta a:hover, .excerpt-minic h2 a:hover, .excerpt-minic .meta a:hover, .article-content .wp-caption:hover .wp-caption-text, .article-content a, .article-nav a:hover, .relates a:hover, .widget_links li a:hover, .widget_categories li a:hover, .widget_ui_comments strong, .widget_ui_posts li a:hover .text, .widget_ui_posts .nopic .text:hover , .widget_meta ul a:hover, .tagcloud a:hover, .textwidget a, .textwidget a:hover, .sign h3, #navs .item li a, .url, .url:hover, .excerpt h2 a:hover span, .widget_ui_posts a:hover .text span, .widget-navcontent .item-01 li a:hover span, .excerpt-minic h2 a:hover span, .relates a:hover span,.fixnav > li.current-menu-item > a, .fixnav > li.current_page_item > a, .post-copyright-custom a{color: #13aa52;}.btn-primary, .label-primary, .branding-primary, .post-copyright:hover, .article-tags a, .pagination ul > .active > a, .pagination ul > .active > span, .pagenav .current, .widget_ui_tags .items a:hover, .sign .close-link, .pagemenu li.active a, .pageheader, .resetpasssteps li.active, #navs h2, #navs nav, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary, .tag-clouds a:hover{background-color: #13aa52;}.btn-primary, .search-input:focus, #bdcs .bdcs-search-form-input:focus, #submit, .plinks ul li a:hover,.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary{border-color: #13aa52;}.search-btn, .label-primary, #bdcs .bdcs-search-form-submit, #submit, .excerpt .cat{background-color: #13aa52;}.excerpt .cat i{border-left-color:#13aa52;}@media (max-width: 720px) {.site-navbar li.active a, .site-navbar li.active a:hover, .m-nav-show .m-icon-nav{color: #13aa52;}}@media (max-width: 480px) {.pagination ul > li.next-page a{background-color:#13aa52;}}.post-actions .action.action-like,.pagemenu li.current-menu-item > a{background-color: #13aa52;}.catleader h1{border-left-color: #13aa52;}.loop-product-filters ul .current-cat>a{color: #13aa52;}.logo a {
+  height: 56px;
+}
+.logo img {
+  max-height: 56px;
+  margin-top: -12px;
+  margin-bottom: 0;
+}
+.brand {
+  display: none;
+}
+.docs .entry-title {
+    font-size: 25px; font-weight:bold; padding-bottom:50px
+}
+.widget-title {
+    font-size: 18px;
+}
+.entry-content{ line-height:1.83}</style><link rel="icon" href="https://mongoing.com/wp-content/uploads/2020/04/43fc3acfe8b8fe3-32x32.png" sizes="32x32">
+<link rel="icon" href="https://mongoing.com/wp-content/uploads/2020/04/43fc3acfe8b8fe3-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://mongoing.com/wp-content/uploads/2020/04/43fc3acfe8b8fe3-180x180.png">
+<meta name="msapplication-TileImage" content="https://mongoing.com/wp-content/uploads/2020/04/43fc3acfe8b8fe3-270x270.png">
+<link rel="shortcut icon" href="https://mongoing.com/favicon.ico">
+<!--[if lt IE 9]><script src="https://mongoing.com/wp-content/themes/dux/js/libs/html5.min.js"></script><![endif]-->
+</head>
+<body class="archive category category-interpretation-of-principles category-11465 m-excerpt-cat site-layout-3 text-justify-on m-sidebar m-user-on">
+<header class="header">
+	<div class="container">
+		<div class="logo"><a href="index1.html" title="MongoDB,MongoDB中文"><img src="static/picture/c16c760629feeac-e1594810404690.png" alt="MongoDB,MongoDB中文">MongoDB中文社区</a></div>		<div class="brand">MongoDB爱好者<br>垂直技术交流平台</div>		<ul class="site-nav site-navbar">
+			<li id="menu-item-25" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-25"><a title="首页" href="index2.html">首页</a></li>
+<li id="menu-item-182" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-182"><a href="niurenblog.html">大咖博客</a>
+<ul class="sub-menu">
+	<li id="menu-item-180" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-180"><a href="tj.html">TJ的博客</a></li>
+	<li id="menu-item-2164" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2164"><a href="zyd.html">张友东的博客</a></li>
+	<li id="menu-item-2165" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2165"><a href="ychtiger.html">叶翔的博客</a></li>
+	<li id="menu-item-3550" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3550"><a href="zhangyaogxing.html">耀星的博客</a></li>
+	<li id="menu-item-313" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-313"><a href="eshujiushiwo.html">E叔的博客</a></li>
+	<li id="menu-item-33256" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-33256"><a href="wolfkdy.html">孔德雨的博客</a></li>
+	<li id="menu-item-33269" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-33269"><a href="frank.html">徐雷的博客</a></li>
+	<li id="menu-item-26820" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26820"><a href="guoyuanwei.html">郭远威的博客</a></li>
+	<li id="menu-item-33153" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-33153"><a href="zale.html">Zale的博客</a></li>
+	<li id="menu-item-77701" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-77701"><a href="yangyazhou.html">杨亚洲的博客</a></li>
+	<li id="menu-item-77702" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-77702"><a href="xiadejun.html">夏德军的博客</a></li>
+	<li id="menu-item-181" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-181"><a href="beibei.html">贝贝的博客</a></li>
+	<li id="menu-item-4824" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4824"><a href="xiaopang.html">上海小胖的博客</a></li>
+	<li id="menu-item-2166" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2166"><a href="translation-blogs.html">官网翻译文章</a></li>
+</ul>
+</li>
+<li id="menu-item-756" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-756"><a href="anspress.html#038;sort=newest">技术问答</a></li>
+<li id="menu-item-34658" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-34658"><a href="index.html">中文用户手册</a>
+<ul class="sub-menu">
+	<li id="menu-item-76291" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76291"><a href="index.html">中文用户手册</a></li>
+	<li id="menu-item-33506" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33506"><a href="index3.html">3.4用户手册</a></li>
+	<li id="menu-item-56320" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-56320"><a href="mongodb-beginner-tutorial.html">7天入门学习</a></li>
+</ul>
+</li>
+<li id="menu-item-933" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-933"><a href="resources.html">资源分享</a>
+<ul class="sub-menu">
+	<li id="menu-item-33159" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33159"><a href="javascript:;">MongoDB大学</a></li>
+	<li id="menu-item-29255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29255"><a href="mongodb_ace.html">MongoDB高手课</a></li>
+	<li id="menu-item-34405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34405"><a href="mongodb-download-white-paper.html">MongoDB白皮书</a></li>
+	<li id="menu-item-34409" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34409"><a href="downloads-jingxiang.html">软件下载镜像</a></li>
+	<li id="menu-item-74971" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-74971"><a href="javascript:;">案例分享视频</a></li>
+	<li id="menu-item-78044" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78044"><a href="mongodb-webinar-video.html">在线研讨会视频</a></li>
+</ul>
+</li>
+<li id="menu-item-33249" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-33249"><a href="offline-user-conference.html">用户组</a>
+<ul class="sub-menu">
+	<li id="menu-item-33250" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33250"><a href="offline-user-groups.html">线下用户组</a></li>
+	<li id="menu-item-33154" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-33154"><a href="offline-user-conference.html">线下用户大会</a></li>
+	<li id="menu-item-33247" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33247"><a href="core-team-members.html">组委会成员</a></li>
+	<li id="menu-item-33297" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33297"><a href="translators.html">翻译小组</a></li>
+	<li id="menu-item-34495" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34495"><a href="mongodb-technical-support.html">社区成员</a></li>
+	<li id="menu-item-75412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75412"><a href="mongodb-training-assessment-certificate.html">入门培训合格证书</a></li>
+</ul>
+</li>
+<li id="menu-item-2306" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2306"><a href="webinar_cn.html">社区动态</a>
+<ul class="sub-menu">
+	<li id="menu-item-78370" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-78370"><a href="offline-user-conference.html">线下用户大会</a></li>
+	<li id="menu-item-33155" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-33155"><a href="webinar_cn.html">中文在线讲座</a></li>
+	<li id="menu-item-78369" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78369"><a href="mongodb-community-dynamics.html">社区动态</a></li>
+	<li id="menu-item-33158" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-33158"><a href="news.html">新闻</a></li>
+	<li id="menu-item-33157" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-33157"><a href="javascript:;">招聘</a></li>
+</ul>
+</li>
+<li id="menu-item-77717" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-77717"><a href="javascript:;">企业专栏</a>
+<ul class="sub-menu">
+	<li id="menu-item-33317" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33317"><a href="javascript:;">MongoDB公司</a></li>
+	<li id="menu-item-78053" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78053"><a href="javascript:;">Tapdata数据平台</a></li>
+	<li id="menu-item-33258" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33258"><a href="javascript:;">锦木信息技术</a></li>
+	<li id="menu-item-78122" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78122"><a href="javascript:;">北科汇智公司</a></li>
+</ul>
+</li>
+							<li class="navto-search"><a href="javascript:;" class="search-show active"><i class="fa fa-search"></i></a></li>
+					</ul>
+				<div class="topbar">
+			<ul class="site-nav topmenu">
+												<li class="menusns menu-item-has-children">
+					<a href="javascript:;">关注我们</a>
+					<ul class="sub-menu">
+						<li><a class="sns-wechat" href="javascript:;" title="MongoDB中文社区" data-src="https://mongoing.com/wp-content/uploads/2020/11/bb79e7adc0d10cc.png">MongoDB中文社区</a></li>											</ul>
+				</li>
+							</ul>
+											<a rel="nofollow" href="javascript:;" class="signin-loader">Hi, 请登录</a>
+				&nbsp; &nbsp; <a rel="nofollow" href="javascript:;" class="signup-loader">我要注册</a>
+				&nbsp; &nbsp; <a rel="nofollow" href="javascript:;">找回密码</a>
+					</div>
+							<i class="fa fa-bars m-icon-nav"></i>
+											<a rel="nofollow" href="javascript:;" class="signin-loader m-icon-user"><i class="fa fa-user"></i></a>
+						</div>
+</header>
+<div class="site-search">
+	<div class="container">
+		<form method="get" class="site-search-form" action="https://mongoing.com/"><input class="search-input" name="s" type="text" placeholder="输入关键字" value="" required="required"><button class="search-btn" type="submit"><i class="fa fa-search"></i></button></form>	</div>
+</div>
+
+
+
+<section class="container">
+	<div class="content-wrap">
+		<div class="content">
+						<div class="catleader"><h1>原理解读</h1></div><article class="excerpt excerpt-1 excerpt-text"><header><h2><a target="_blank" href="javascript:;" title="MongoDB command命令处理模块源码实现二-MongoDB中文社区">MongoDB command命令处理模块源码实现二</a></h2></header><p class="meta"><time><i class="fa fa-clock-o"></i>2021-04-15</time><span class="author"><i class="fa fa-user"></i>Mr.Mongo</span><a class="pc" href="javascript:;"><i class="fa fa-comments-o"></i>评论(0)</a><a href="javascript:;" etap="like" class="post-like" data-pid="78285"><i class="fa fa-thumbs-o-up"></i>赞(<span>4</span>)</a></p><p class="note">1. Command命令处理模块回顾 《MongoDB command命令处理模块源码实现一》中我们分析了一个客户端请求到来后，mognodb服务端大体处理流程如下： ①　从message中解析初报文头部，从而确定一个完整的MongoDB报...</p></article><article class="excerpt excerpt-2 excerpt-text"><header><h2><a target="_blank" href="javascript:;" title="MongoDB 一致性模型设计与实现-MongoDB中文社区">MongoDB 一致性模型设计与实现</a></h2></header><p class="meta"><time><i class="fa fa-clock-o"></i>2021-03-09</time><span class="author"><i class="fa fa-user"></i>TonyXia</span><a class="pc" href="javascript:;"><i class="fa fa-comments-o"></i>评论(1)</a><a href="javascript:;" etap="like" class="post-like" data-pid="77853"><i class="fa fa-thumbs-o-up"></i>赞(<span>5</span>)</a></p><p class="note">本文源自阅读了 MongoDB 于 VLDB 19 上发表的 Tunable Consistency in MongoDB 论文之后，在内部所做的分享（分享 PPT 见文末）。现在把分享的内容整理成此文，并且补充了部分在之前的分享中略过的细...</p></article><article class="excerpt excerpt-3 excerpt-text"><header><h2><a target="_blank" href="javascript:;" title="MongoDB分布式事务内核源码解读及实践分享-MongoDB中文社区">MongoDB分布式事务内核源码解读及实践分享</a></h2></header><p class="meta"><time><i class="fa fa-clock-o"></i>2021-02-03</time><span class="author"><i class="fa fa-user"></i>Mr.Mongo</span><a class="pc" href="javascript:;"><i class="fa fa-comments-o"></i>评论(0)</a><a href="javascript:;" etap="like" class="post-like" data-pid="77608"><i class="fa fa-thumbs-o-up"></i>赞(<span>3</span>)</a></p><p class="note">本文节选自华为云DDS数据库架构师崔鑫在2020年MongoDB中文社区年终大会上的分享。 今天给大家分享一下MongoDB内核源码在分布式事务上的一些表现。 1. MongoDB作为现代数据库的High-Level Design设计，包括...</p></article><article class="excerpt excerpt-4 excerpt-text"><header><h2><a target="_blank" href="javascript:;" title="MongoDB Command命令处理模块源码实现一-MongoDB中文社区">MongoDB Command命令处理模块源码实现一</a></h2></header><p class="meta"><time><i class="fa fa-clock-o"></i>2021-02-02</time><span class="author"><i class="fa fa-user"></i>Mr.Mongo</span><a class="pc" href="javascript:;"><i class="fa fa-comments-o"></i>评论(0)</a><a href="javascript:;" etap="like" class="post-like" data-pid="77592"><i class="fa fa-thumbs-o-up"></i>赞(<span>7</span>)</a></p><p class="note">1. 背景 &lt;&lt;transport_layer网络传输层模块源码实现&gt;&gt;中分享了MongoDB内核底层网络IO处理相关实现，包括套接字初始化、一个完整MongoDB报文的读取、获取到DB数据发送给客户端等。Mongo...</p></article><article class="excerpt excerpt-5 excerpt-text"><header><h2><a target="_blank" href="javascript:;" title="MongoDB 4.4 复制机制变化 —— oplogTruncateAfterPoint 在主库上的应用-MongoDB中文社区">MongoDB 4.4 复制机制变化 —— oplogTruncateAfterPoint 在主库上的应用</a></h2></header><p class="meta"><time><i class="fa fa-clock-o"></i>2021-02-01</time><span class="author"><i class="fa fa-user"></i>TonyXia</span><a class="pc" href="javascript:;"><i class="fa fa-comments-o"></i>评论(0)</a><a href="javascript:;" etap="like" class="post-like" data-pid="77577"><i class="fa fa-thumbs-o-up"></i>赞(<span>3</span>)</a></p><p class="note">背景 在内部针对 MongoDB 4.4 的测试中，我们发现在带写压力的情况下对主库进行 unclean shutdown （kill -9），主库在重启之后少了很多数据，通过分析日志可以看到在加载完 stable checkpoint，进...</p></article><article class="excerpt excerpt-6 excerpt-text"><header><h2><a target="_blank" href="javascript:;" title="一文读懂 MongoDB chunk 迁移-MongoDB中文社区">一文读懂 MongoDB chunk 迁移</a></h2></header><p class="meta"><time><i class="fa fa-clock-o"></i>2021-01-26</time><span class="author"><i class="fa fa-user"></i>Mr.Mongo</span><a class="pc" href="javascript:;"><i class="fa fa-comments-o"></i>评论(0)</a><a href="javascript:;" etap="like" class="post-like" data-pid="77479"><i class="fa fa-thumbs-o-up"></i>赞(<span>0</span>)</a></p><p class="note">一、chunk简介 1.1 chunk是什么 MongoDB在Sharding模式下（对于Sharding不了解的可以参考shard介绍），通过Mongos向开启了shard分片的集合写入文档，这些文档会根据其shardKey分散到Mong...</p></article><article class="excerpt excerpt-7 excerpt-text"><header><h2><a target="_blank" href="javascript:;" title="MongoDB transport_layer网络传输层模块源码实现四-MongoDB中文社区">MongoDB transport_layer网络传输层模块源码实现四</a></h2></header><p class="meta"><time><i class="fa fa-clock-o"></i>2020-12-22</time><span class="author"><i class="fa fa-user"></i>Mr.Mongo</span><a class="pc" href="javascript:;"><i class="fa fa-comments-o"></i>评论(0)</a><a href="javascript:;" etap="like" class="post-like" data-pid="76637"><i class="fa fa-thumbs-o-up"></i>赞(<span>3</span>)</a></p><p class="note">&nbsp; 杨亚洲老师将于2020年MongoDB中文社区年终大会上分享OPPO万亿级文档数据库MongoDB集群性能优化实践，点击此处查看活动详情。http://hdxu.cn/RInMN 1. 说明 本文分析网络传输层模块中的最后一个...</p></article><article class="excerpt excerpt-8 excerpt-text"><header><h2><a target="_blank" href="javascript:;" title="MongoDB 路由表刷新导致响应慢场景解读-MongoDB中文社区">MongoDB 路由表刷新导致响应慢场景解读</a></h2></header><p class="meta"><time><i class="fa fa-clock-o"></i>2020-12-01</time><span class="author"><i class="fa fa-user"></i>Mr.Mongo</span><a class="pc" href="javascript:;"><i class="fa fa-comments-o"></i>评论(1)</a><a href="javascript:;" etap="like" class="post-like" data-pid="75945"><i class="fa fa-thumbs-o-up"></i>赞(<span>1</span>)</a></p><p class="note">&nbsp; MongoDB sharding 实例从3.4版本升级到 4.0版本 以后插入性能明显降低，观察日志发现大量的 insert 请求慢日志： 2020-08-19T16:40:46.563+0800 I COMMAND [con...</p></article><article class="excerpt excerpt-9 excerpt-text"><header><h2><a target="_blank" href="javascript:;" title="shardCollection源码解析-MongoDB中文社区">shardCollection源码解析</a></h2></header><p class="meta"><time><i class="fa fa-clock-o"></i>2020-11-06</time><span class="author"><i class="fa fa-user"></i>Mr.Mongo</span><a class="pc" href="javascript:;"><i class="fa fa-comments-o"></i>评论(0)</a><a href="javascript:;" etap="like" class="post-like" data-pid="75581"><i class="fa fa-thumbs-o-up"></i>赞(<span>1</span>)</a></p><p class="note">&nbsp; 本文将对MongoDB的shardCollection命令进行系统的源码解读并分析几个在运营过程中遇到的问题。决定写这篇文章的原因是在运营过程中，发现一个用户集群创建分片表执行shardCollection命令时，命令执行了几...</p></article><article class="excerpt excerpt-10 excerpt-text"><header><h2><a target="_blank" href="javascript:;" title="MongoDB Oplog Stones 实现分析及启动加载优化-MongoDB中文社区">MongoDB Oplog Stones 实现分析及启动加载优化</a></h2></header><p class="meta"><time><i class="fa fa-clock-o"></i>2020-10-27</time><span class="author"><i class="fa fa-user"></i>TonyXia</span><a class="pc" href="javascript:;"><i class="fa fa-comments-o"></i>评论(1)</a><a href="javascript:;" etap="like" class="post-like" data-pid="75500"><i class="fa fa-thumbs-o-up"></i>赞(<span>3</span>)</a></p><p class="note">本文基于 4.2 代码分析 背景 Oplog Collection 首先是作为一个 Capped Collection 来实现的，但是单纯的 Capped Collection 会在每一次的写操作之后，如果发现集合大小超出配置的最大值，就会...</p></article><div class="pagination"><ul><li class="prev-page"></li><li class="active"><span>1</span></li><li><a href='javascript:;'>2</a></li><li><a href='javascript:;'>3</a></li><li><a href='javascript:;'>4</a></li><li><span> ... </span></li><li class="next-page"><a href="javascript:;">下一页</a></li><li><span>共 8 页</span></li></ul></div>		</div>
+	</div>
+	<div class="sidebar">
+<div class="widget-on-phone widget widget_text"><h3>强力推荐</h3>			<div class="textwidget"><p><a href="javascript:;">2021.07.02 Zabbix深圳大会</a></p>
+<p><a href="javascript:;">2021 CSDI SUMMIT中国软件研发管理技术峰会</a></p>
+<p><a href="javascript:;">MongoDB技术大会议题招募中</a></p>
+<p><a href="mongodb-webinar-video.html">MongoDB在线研讨会视频集锦</a></p>
+<p><a href="javascript:;">MongoDB中文社区培训&amp;线下技术大会视频</a></p>
+<p><a href="index.html">最新版MongoDB中文手册翻译持续进行中</a></p>
+</div>
+		</div><div class="widget-on-phone widget widget_text"><h3>中文社区公众号</h3>			<div class="textwidget"><p><a href="static/picture/44ce67032c0646f.png"><img class="alignnone size-full wp-image-75953" src="static/picture/44ce67032c0646f.png" alt="" width="300" height="300"></a></p>
+</div>
+		</div><div class="widget_text widget-on-phone widget widget_custom_html"><h3>MongoDB 官方</h3><div class="textwidget custom-html-widget"><a href="javascript:;"><img src="static/picture/mongodb-e1554975707919.jpg"></a></div></div><div class="widget_text widget-on-phone widget widget_custom_html"><h3>异构数据库实时同步</h3><div class="textwidget custom-html-widget"><a href="javascript:;"><img src="static/picture/c1b4a58a97db482.png"></a></div></div><div class="widget_text widget widget_custom_html"><h3>锦木信息</h3><div class="textwidget custom-html-widget"><a href="javascript:;"><img src="static/picture/6446d860dbbfe54-6.png"></a></div></div><div class="widget_text widget widget_custom_html"><h3>北科汇智</h3><div class="textwidget custom-html-widget"><a href="javascript:;"><img src="static/picture/c9de79563017f23.png"></a></div></div><div class="widget-on-phone widget widget_text"><h3>友情链接</h3>			<div class="textwidget"><p><a href="javascript:;">MongoDB官方</a></p>
+<p><a href="javascript:;">Tapdata 实时数据融合平台</a></p>
+<p><a href="javascript:;">Tapdata Cloud 同异构数据库同步工具</a></p>
+<p><a href="javascript:;">上海锦木信息技术有限公司</a></p>
+<p><a href="javascript:;">IT大咖说 &#8211; 开源是一种态度</a></p>
+<p><a href="javascript:;">商业新知</a></p>
+<p><a href="javascript:;">Thanks to Supports from JetBrains</a></p>
+</div>
+		</div><div class="widget widget_ui_tags"><h3>热门标签</h3><div class="items"><a href="javascript:;">索引 (154)</a><a href="javascript:;">复制集 (131)</a><a href="javascript:;">分片 (115)</a><a href="javascript:;">mongodb (94)</a><a href="javascript:;">wiredtiger (83)</a><a href="javascript:;">BSON 类型 (36)</a><a href="javascript:;">聚合 (34)</a><a href="javascript:;">数据迁移 (27)</a><a href="javascript:;">高并发 (27)</a><a href="javascript:;">数据分析 (22)</a><a href="javascript:;">连接池 (17)</a><a href="javascript:;">设计模式 (14)</a><a href="javascript:;">OpsManager (10)</a><a href="javascript:;">备份恢复 (9)</a><a href="javascript:;">安装MongoDB (9)</a><a href="javascript:;">Mongo (8)</a><a href="javascript:;">性能测试 (8)</a><a href="javascript:;">sharding (7)</a><a href="javascript:;">replication (6)</a><a href="javascript:;">MongoDB 4.2 (6)</a><a href="javascript:;">故障诊断 (6)</a><a href="javascript:;">GridFS (6)</a><a href="javascript:;">3.4 (5)</a><a href="javascript:;">数据中台 (5)</a><a href="javascript:;">安全机制 (5)</a><a href="javascript:;">Java驱动 (5)</a><a href="javascript:;">新特性 (4)</a><a href="javascript:;">随笔 (4)</a><a href="javascript:;">奕名小惊 (4)</a><a href="javascript:;">分布式事务 (4)</a></div></div><div class="widget_text widget widget_custom_html"><h3>MongoDB视频课</h3><div class="textwidget custom-html-widget"><a href="javascript:;"><img src="static/picture/MongoDB高手课.jpg"></a></div></div><div class="widget_text widget widget_custom_html"><h3>MongoDB议题征集</h3><div class="textwidget custom-html-widget"><a href="javascript:;"><img src="static/picture/6446d860dbbfe54-5.png"></a></div></div></div></section>
+
+<footer class="footer">
+	<div class="container">
+						<p>&copy; 2014-2021 &nbsp; <a href="index1.html">MongoDB中文社区</a> &nbsp; <a href="javascript:;">网站地图</a>
+</p>
+		<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c3b30d6a14b3ee8b70ca6ef4ede1b1b5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>	</div>
+</footer>
+
+
+<div class="rollbar rollbar-rm"><ul><li class="rollbar-totop"><a href="javascript:(TBUI.scrollTo());"><i class="fa fa-angle-up"></i><span>回顶</span></a><h6>回顶部<i></i></h6></li><li class="rollbar-qrcode"><a href="javascript:;"><i class="fa fa-qrcode"></i><span>微信公众号咨询</span></a><h6>关注微信<span class="copy-wechat-wrap">：mongoing-mongoing<br><span data-id="mongoing-mongoing" class="copy-wechat-number">复制微信号</span></span><img src="static/picture/fc6c3ed2083f8ba.png"><i></i></h6></li><li><a target="_blank" href="javascript:;"><i class="fa fa-globe"></i><span>提交工单咨询</span></a><h6>提交工单咨询<i></i></h6></li></ul></div>
+<script>window.TBUI={"www":"https:\/\/mongoing.com","uri":"https:\/\/mongoing.com\/wp-content\/themes\/dux","ver":"7.1","roll":"1 2","ajaxpager":"1","fullimage":false,"url_rp":"https:\/\/mongoing.com\/reset-password","captcha":0,"captcha_appid":"","captcha_comment":1}</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/mongoing.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='static/js/scripts.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ebd_inline = {"ajaxurl":"https:\/\/mongoing.com\/wp-admin\/admin-ajax.php","ajax_nonce":"ae0008bd6e"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='static/js/email-before-download-public.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var pollsL10n = {"ajax_url":"https:\/\/mongoing.com\/wp-admin\/admin-ajax.php","text_wait":"\u60a8\u7684\u4e0a\u4e00\u4e2a\u8bf7\u6c42\u4ecd\u5728\u5904\u7406\u4e2d\u3002\u8bf7\u7b49\u4e00\u4e0b......","text_valid":"\u8bf7\u9009\u62e9\u6709\u6548\u7684\u6295\u7968\u7b54\u6848\u3002","text_multiple":"\u5141\u8bb8\u7684\u6700\u5927\u9009\u62e9\u6570\u91cf\uff1a","show_loading":"1","show_fading":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='static/js/polls-js.js'></script>
+<script type='text/javascript' src='static/js/bootstrap.min.js'></script>
+<script type='text/javascript' src='static/js/loader.js'></script>
+<script type='text/javascript' src='static/js/wp-embed.min.js'></script>
+</body>
+</html>
+<!-- Dynamic page generated in 0.988 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2021-06-04 11:55:47 -->
+
+<!-- super cache -->
